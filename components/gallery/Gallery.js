@@ -1,0 +1,33 @@
+import Image from "next/image";
+import React from "react";
+import { galleryImages } from "../../data/galleryImage";
+import { Fade } from "react-reveal";
+const Gallery = () => {
+  return (
+    <div className="relative">
+      <div className="absolute -z-10 top-5 -right-1">
+        <Image src='/image/gallery/bg-dots-home.png' height={260} width={260} alt="shape" />
+    </div>
+      <Fade bottom>
+      <div className="max-w-[1296px] mx-auto mb-20 ">
+       
+       <h2 className="text-2xl md:text-[57px] font-extrabold text-center mb-4 md:mb-10 mt-8 md:mt-28">
+         Our <span className="text-[#5A00CC]">Gallery</span>
+       </h2>
+       <p className="text-center text-lg text-[#444] mb-4 md:mb-14">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+       </p>
+       <div className="grid grid-cols-12 gap-6 items-center content-center  mx-2 md:mx-0">
+         {galleryImages.map((img) => (
+           <div key={img} className="col-span-12 md:col-span-6 lg:col-span-4">
+             <Image src={img} height={315} width={468} />
+           </div>
+         ))}
+       </div>
+     </div>
+      </Fade>
+    </div>
+  );
+};
+
+export default Gallery;
