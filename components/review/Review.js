@@ -19,8 +19,8 @@ const Review = () => {
           <div className="flex flex-col mx-2 md:mx-0 flex-wrap md:flex-row gap-6 justify-center items-center">
            {
             reviews.map(review => (
-              <div key={review.id} className="flex flex-col rounded-sm shadow-lg pb-[22px] pt-1 text-center bg-white md:w-[400px]">
-                <div>
+              <div key={review.id} className="flex flex-col rounded-sm shadow-lg pb-[30px] px-[30px] pt-1 text-center bg-white md:w-[400px]">
+                <div className="pb-3">
                   <Image src={review.image} width={118} height={130} alt="review image" />
                 </div>
                 <p className="text-lg text-[#444] text-center">
