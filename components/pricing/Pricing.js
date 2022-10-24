@@ -7,17 +7,17 @@ const Pricing = () => {
       <div className="bg-[url('/image/pricing/bg.png')] min-h-[850px] relative flex items-center justify-center">
      
       <Fade bottom>
-      <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto mb-10 md:mb-28">
-        <h2 className="text-white  font-bold mt-5 md:mt-24 text-2xl md:text-[57px]">
+      <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto mb-10 md:mb-[125px]">
+        <h2 className="text-white  font-bold mt-5 md:mt-[120px] text-2xl md:text-[57px]">
           Get Your Ticket
         </h2>
-        <p className="md:max-w-lg  mb-4 md:mb-14 text-white text-center mt-5 text-sm md:text-lg md:mt-8">
+        <p className="md:max-w-lg  mb-4 md:mb-14 text-white text-center mt-5 text-sm md:text-lg md:mt-[30px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum urna sed erat tortor aliquam ipsum
         </p>
         <div className="flex flex-col px-2 xl:px-0 items-stretch justify-center flex-wrap lg:flex-row gap-6">
             {
               pricing.map((item,i) => (
-                <div className="bg-white pricing-card md:w-[417px] rounded-lg " key={item.title}>
+                <div className="bg-white pricing-card w-[310px] sm:w-[417px] rounded-lg " key={item.title}>
                   <div className="flex flex-col justify-between">
                     <div className={`${i == 1 && 'bg-[#F112A2] text-white'} pt-24 rounded-t-lg`}>
                     <h1 className={`text-center font-extrabold text-2xl md:text-[57px] mb-3 md:mb-7 ${i == 1 ? 'bg-[#F112A2] text-white':'primary-color'}`}>${item.price}</h1>

@@ -1,93 +1,110 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import { BsChevronDown } from 'react-icons/bs';
+import Image from "next/image";
+import Link from "next/link";
+import React, { useEffect, useState } from "react";
+import { BsChevronDown } from "react-icons/bs";
 
-import {HiMenu} from 'react-icons/hi'
-import Button from '../others/Button';
+import { HiMenu } from "react-icons/hi";
+import Button from "../others/Button";
 
 const Header = () => {
-  const [open, setOpen] = useState(false)
-  const [navColor, setNavColor] = useState(false)
-  const [dropdown, setDropdown] = useState(false)
+  const [open, setOpen] = useState(false);
+  const [navColor, setNavColor] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
   const changeNavColor = () => {
-    if(window.scrollY >= 90){
-      setNavColor(true)
-    }else{
-      setNavColor(false)
+    if (window.scrollY >= 90) {
+      setNavColor(true);
+    } else {
+      setNavColor(false);
     }
-  }
+  };
   const handleDropdownClick = () => {
-    setDropdown(false)
-    setOpen(false)
-  }
-useEffect(()=>{
-  window.addEventListener('scroll', changeNavColor)
-},[])
+    setDropdown(false);
+    setOpen(false);
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", changeNavColor);
+  }, []);
   return (
-
-
-    <nav className={`w-full fixed z-50 px-1 xl:px-0 navbar py-2.5 ${navColor?'bg-[#5A00CD]':'bg-transparent'}`}>
+    <nav
+      className={`w-full fixed z-50 px-1 xl:px-0 navbar py-4 xl:py-[19.5px] ${
+        navColor ? "bg-[#3D0687]" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-[1296px] relative z-40 mx-auto flex flex-wrap justify-between items-center">
         <Link href="/">
-        <a className="flex items-center pl-2 md:pl-0">
-          <Image  src='/icon.png' height={36} width={102}  />
-        </a>
+          <a className="flex items-center pl-2 md:pl-0">
+            <Image src="/icon.png" height={36} width={102} />
+          </a>
         </Link>
-       
-        
-        <div className={` w-full md:block md:w-auto ${open?'block absolute h-[92vh] z-50 bg-[#5401BF] top-12':'hidden'}`}>
-          <ul className="flex items-start px-4 md:px-0 md:items-center flex-col md:p-4 mt-4 bg-body rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
-            <li onClick={() => setOpen(false)}>
-              <Link href="/" >
-              <a  className="block text-white text-lg text-x py-2 pr-4 md:pl-3  rounded md:bg-transparent hover:text-primary  md:p-0 dark:text-white" aria-current="page">Home</a>
+
+        <div
+          className={` w-screen md:block md:w-auto ${
+            open ? "block absolute -left-1 h-[92vh] z-50 bg-[#5401BF] top-14" : "hidden"
+          }`}
+        >
+          <ul className="flex items-start px-4 md:px-0 md:items-center flex-col md:p-4 mt-4 bg-body rounded-lg md:flex-row lg:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:gap-5">
+            {
+              [['/', 'Home'], ['/about', 'About'], ['/schedule', 'Schedule']].map(([url,title]) => (
+                <li key={title} onClick={() => setOpen(false)}>
+              <Link href={url}>
+                <a
+                  className="block text-white text-lg text-x py-2 pr-4 md:pl-3  rounded md:bg-transparent hover:text-primary  md:p-0 dark:text-white"
+                  aria-current="page"
+                >
+                 {title}
+                </a>
               </Link>
             </li>
-            <li onClick={() => setOpen(false)}>
-              <Link href="/about">
-              <a  className="block text-white text-lg text-x py-2 pr-4 md:pl-3  rounded r md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 ">About</a>
-              </Link>
-            </li>
-            <li onClick={() => setOpen(false)}>
-              <Link href="/schedule">
-              <a  className="block text-white text-lg text-x py-2 pr-4 md:pl-3  rounded r md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 ">Schedule</a>
-              </Link>
-            </li>
+              ))
+            }
+            
+         
+            
             <li>
-              
-              <a onClick={() => setDropdown(!dropdown)} className=" flex items-center gap-2 relative cursor-pointer text-white text-lg text-x py-2 pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 ">Pages <BsChevronDown /> </a>
-              <div className='relative'>
-              {dropdown && <div className='absolute bg-[#3F0985] w-40 top-7  flex flex-col text-white text-lg'>
-              
-              <Link href='/speakers'>
-                  <a onClick={handleDropdownClick} className='py-2 px-4 select-none hover:bg-blue-600'>Speakers</a>
-              </Link>
-              <Link href='/price'>
-                  <a onClick={handleDropdownClick} className='py-2 px-4 select-none hover:bg-blue-600'>Price Plan</a>
-              </Link>
-              <Link href='/gallery'>
-                  <a onClick={handleDropdownClick} className='py-2 px-4 select-none hover:bg-blue-600'>Gallery</a>
-              </Link>
-              <Link href='/contact'>
-                  <a onClick={handleDropdownClick} className='py-2 px-4 select-none hover:bg-blue-600'>Contact Us</a>
-              </Link>
-             
-            </div>}
+              <a
+                onMouseOver={() => setDropdown(!dropdown)}
+                
+                className=" flex items-center gap-2 relative cursor-pointer text-white text-lg text-x py-2 pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 "
+              >
+                Pages <BsChevronDown />{" "}
+              </a>
+              <div className="relative">
+                {dropdown && (
+                  <div className="absolute bg-[#3F0985] w-40 md:top-[35px]  flex flex-col text-white text-lg">
+                    {
+                      [['/speakers', 'Speakers'], ['/price', 'Price'], ['/gallery', 'Gallery'], ['/contact', 'Contact Us']].map(([url, title]) => (
+                        <Link key={title} href={url}>
+                      <a
+                        onClick={handleDropdownClick}
+                        className="py-2 px-4 select-none hover:bg-blue-600"
+                      >
+                       {title}
+                      </a>
+                    </Link>
+                      ))
+                    }
+                  
+                  </div>
+                )}
               </div>
-             
             </li>
-           
+            <div className=" md:hidden mt-2">
+              <Button name="Book Ticket" class="primary-color bg-white" />
+            </div>
           </ul>
         </div>
-        <div>
-            <Button name="Book Ticket" class="primary-color bg-white" />
+        <div className="hidden md:block">
+          <Button name="Book Ticket" class="primary-color bg-white" />
         </div>
-        <button onClick={() => setOpen(!open)} type="button" className="items-center pr-2 md:pr-0 text-sm text-gray-500 rounded-lg md:hidden  ">
-        <HiMenu size={40} className='text-white' /> 
+        <button
+          onClick={() => setOpen(!open)}
+          type="button"
+          className="items-center pr-2 md:pr-0 text-sm text-gray-500 rounded-lg md:hidden  "
+        >
+          <HiMenu size={40} className="text-white" />
         </button>
       </div>
     </nav>
-
   );
 };
 

@@ -8,7 +8,7 @@ const Conference = () => {
            <div className="relative">
      <div className="max-w-[1296px] bg-[url('/image/conference/bg.png')] bg-conference flex flex-col items-center mx-auto min-h-[1200px]">
      <Fade bottom>
-        <h2 className="text-5xl md:text-[57px] font-extrabold text-center mt-8 md:mt-28">
+        <h2 className="text-5xl md:text-[57px] font-extrabold text-center mt-8 md:mt-[120px]">
           Conference <span className="text-[#5A00CC]">Schedule</span>
         </h2>
         <p className="md:max-w-md text-center mt-5 text-lg mx-3 md:text-lg md:mt-8">

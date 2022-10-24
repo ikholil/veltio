@@ -21,7 +21,7 @@ const ContactInfo = () => {
        </div>
        </Fade>
        <Fade right>
-       <div className="flex flex-col md:flex-row gap-5 mb-5 md:mb-20">
+       <div className="flex flex-col justify-center xl:justify-between flex-wrap md:flex-row gap-5 mb-5 md:mb-20">
          {
              contactInfo.map((info) => (
                  <div className="p-7 mx-3 md:mx-0 rounded-md shadow-xl" key={info.id}>

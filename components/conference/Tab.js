@@ -9,7 +9,7 @@ const Tab = () => {
     setCurrentTab(id);
   };
   return (
-    <div className="max-w-3xl mt-5 md:mt-14 mb-5 md:mb-20">
+    <div className="max-w-[856px] mt-5 md:mt-14 mb-5 md:mb-[120px]">
       <div className="flex justify-center gap-4 mx-2 md:mx-0">
         {conference.map((speaker, i) => (
           <div
@@ -26,20 +26,20 @@ const Tab = () => {
           </div>
         ))}
       </div>
-      <div className="content mt-5 md:mt-14">
+      <div className="content mt-5 md:mt-[60px]">
         {conference.map((conference, i) => (
           <div key={i}>
             {currentTab === `${conference.id}` && (
                 <div className="flex  mx-2 md:mx-0 flex-col gap-7">
                     {
                         conference.speakers.map((item) => (
-                            <div key={item.title} className="bg-white p-7 flex items-center flex-col md:flex-row gap-3 md:gap-8 rounded-md shadow-lg">
+                            <div key={item.title} className="bg-white p-[22px] flex items-center flex-col md:flex-row gap-3 md:gap-8 rounded-[10px] shadow-lg">
                                 
                                 <div className="md:border-r pr-8 border-[#5A00CC]">
                                 <Image src={item.img} className="rounded-md" height={750} width={700} alt="conference speaker" />
                                 </div>
                                 <div>
-                                    <p className="text-lg font-bold mb-3">{item.time}</p>
+                                    <p className="text-lg font-bold mb-[15px]">{item.time}</p>
                                     <h3 className="text-2xl font-bold mb-5 primary-color">{item.title}</h3>
                                     <p className="text-lg text-[#444444]">{item.desc}</p>
                                 </div>

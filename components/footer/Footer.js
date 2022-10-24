@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { GoPrimitiveDot } from "react-icons/go";
 import Social from "../others/Social";
@@ -6,7 +7,7 @@ const Footer = () => {
   return (
     <div className="relative  bg-[#0D0635]">
        
-      <div className=" max-w-[1296px]  mx-auto pb-10 min-h-[350px]">
+      <div className=" max-w-[1296px]  mx-auto  min-h-[350px]">
         <div className="absolute ">
           <Image
             src="/image/footer/dots1.png"
@@ -16,8 +17,8 @@ const Footer = () => {
           />
         </div>
         <div className="grid place-content-center px-3 xl:px-0  w-full">
-          <div className="w-auto lg:w-[800px] relative flex flex-col justify-center items-center bg-white rounded-md mt-8 md:mt-28 py-8 md:py-16 mx-2 md:mx-auto">
-           <div className="absolute rounded-md top-0 left-0  hidden md:block">
+          <div className="w-auto lg:w-[800px] relative flex flex-col justify-center items-center bg-white px-4 rounded-md my-20 md:my-[120px] py-6 md:py-16 mx-2 md:mx-auto">
+           <div className="absolute rounded-md top-0 left-0  hidden lg:block">
             <Image src='/image/footer/footer-shape.png' className="rounded-md" width={200} height={228} alt="footer shape" />
            </div>
            <div className="absolute rounded-md top-3 right-2">
@@ -33,24 +34,35 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex mx-3 md:mx-0 flex-col md:flex-row justify-between  mt-5 md:mt-28">
-          <div>
+        <div className="flex mx-3 2xl:mx-0 mb-6 pl-16 pt-5 md:pl-0 md:pt-0 md:items-center flex-col md:flex-row justify-between ">
+          <div className="cursor-pointer md:-bottom-2 relative">
+            <Link href='/'>
           <Image src='/icon.png' height={36} width={110} alt="logo" />
+            </Link>
           </div>
           <div>
             <ul className="flex flex-col  md:flex-row gap-2 md:gap-7 items-start mb-4 md:mb-0 md:items-center text-lg text-[#B3B3B3]">
-              <li>Home</li>
+              <Link href='/'>
+              <li className="cursor-pointer">Home</li>
+              </Link>
               <GoPrimitiveDot  className="hidden md:block" />
-              <li>About</li>
+              <Link href="/about">
+              <li className="cursor-pointer">About</li>
+              </Link>
               <GoPrimitiveDot className="hidden md:block" />
-              <li>Schedule</li>
+              <Link href='/schedule'>
+              <li className="cursor-pointer">Schedule</li>
+              </Link>
               <GoPrimitiveDot className="hidden md:block" />
-              <li>Page</li>
+             
+              
+              <li className="cursor-pointer">Page</li>
+              
             </ul>
           </div>
         </div>
         <hr />
-        <div className="flex flex-col md:flex-row  justify-between mt-7 items-center">
+        <div className="flex  flex-col md:flex-row  justify-between p-7 items-center">
           <p className="text-base mb-4 md:mb-0 text-[#b3b3b3]">© 2022 Veltio. All rights reserved</p>
           <Social class="text-white" size={50} />
         </div>

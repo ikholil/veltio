@@ -7,7 +7,7 @@ bannerStates;
 const About = () => {
   return (
     <div className="relative">
-      <div className="mt-4 md:-mt-20 z-20  relative max-w-[1296px] mx-auto">
+      <div className="mt-4 md:-mt-[77px] z-20  relative max-w-[1296px] mx-auto">
         <div className="flex gap-5 mx-2 xl:mx-0 md:gap-0 flex-col md:flex-row flex-wrap  bg-white justify-around my-5 md:my-0 rounded-none md:rounded-lg shadow-lg py-5 z-10 ">
           {bannerStates.map((item) => (
             <div className="flex flex-col items-center" key={item.title}>
@@ -56,7 +56,7 @@ const About = () => {
          </Fade>
          <Fade right>
          <div className="flex flex-col flex-wrap lg:col-span-6 px-6 md:px-0 mr-0 md:mr-20">
-            <h2 className="text-5xl md:text-[57px] leading-tight mb-3 md:mb-8 font-extrabold">
+            <h2 className="text-5xl mt-3 md:mt-0 md:text-[57px] leading-tight mb-3 md:mb-8 font-extrabold">
               Wolcome To Global <span className="text-[#5A00CC]">Business</span>{" "}
               Conference
             </h2>

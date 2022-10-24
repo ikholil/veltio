@@ -6,7 +6,7 @@ import SpeakerDetails from "../../components/team/SpeakerDetails";
 const Speakers = () => {
   return (
     <div>
-      <TopBanner text="Speakers Single" />
+      <TopBanner text="Speakers Single" indicator="Pages → Speakers" />
       <SpeakerDetails />
       <Statics />
       <Footer />

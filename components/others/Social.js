@@ -6,10 +6,10 @@ import {GrLinkedinOption} from 'react-icons/gr'
 const Social = (props) => {
     return (
         <div className='flex justify-center gap-4'>
-            <CgFacebook className={`cursor-pointer hover:text-white hover:border-[#F112A2]   border-[1px] rounded-full p-2 transition-colors hover:bg-[#F112A2] ${props.class}`} size={props.size} />
-            <AiOutlineInstagram className={`cursor-pointer hover:text-white hover:border-[#F112A2]   border-[1px] rounded-full p-2 transition-colors hover:bg-[#F112A2] ${props.class}`} size={props.size} />
-            <BsTwitter className={`cursor-pointer hover:text-white hover:border-[#F112A2]   border-[1px] rounded-full p-2 transition-colors hover:bg-[#F112A2] ${props.class}`} size={props.size} />
-            <GrLinkedinOption className={`cursor-pointer hover:text-white hover:border-[#F112A2]   border-[1px] rounded-full p-2 transition-colors hover:bg-[#F112A2] ${props.class}`} size={props.size} />
+            <CgFacebook className={`cursor-pointer hover:text-white hover:border-[#F112A2] duration-500   border-[1px] rounded-full p-2 transition-colors hover:bg-[#F112A2] ${props.class}`} size={props.size} />
+            <AiOutlineInstagram className={`cursor-pointer hover:text-white hover:border-[#F112A2] duration-500   border-[1px] rounded-full p-2 transition-colors hover:bg-[#F112A2] ${props.class}`} size={props.size} />
+            <BsTwitter className={`cursor-pointer hover:text-white hover:border-[#F112A2] duration-500   border-[1px] rounded-full p-2 transition-colors hover:bg-[#F112A2] ${props.class}`} size={props.size} />
+            <GrLinkedinOption className={`cursor-pointer hover:text-white hover:border-[#F112A2] duration-500   border-[1px] rounded-full p-2 transition-colors hover:bg-[#F112A2] ${props.class}`} size={props.size} />
         </div>
     );
 };
