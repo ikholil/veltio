@@ -34,7 +34,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex mx-3 2xl:mx-0 mb-6 pl-16 pt-5 md:pl-0 md:pt-0 md:items-center flex-col md:flex-row justify-between ">
+        <div className="flex mx-3 2xl:mx-0 mb-4 pl-16 pt-5 md:pl-0 md:pt-0 md:items-center flex-col md:flex-row justify-between ">
           <div className="cursor-pointer md:-bottom-2 relative">
             <Link href='/'>
           <Image src='/icon.png' height={36} width={110} alt="logo" />
@@ -62,7 +62,7 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <div className="flex  flex-col md:flex-row  justify-between p-7 items-center">
+        <div className="flex  flex-col md:flex-row  justify-between py-7  items-center">
           <p className="text-base mb-4 md:mb-0 text-[#b3b3b3]">© 2022 Veltio. All rights reserved</p>
           <Social class="text-white" size={50} />
         </div>

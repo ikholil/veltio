@@ -7,14 +7,14 @@ const Statics = () => {
     <div className="bg-[url('/image/statics/statics-bg.png')] w-screen statics-bg">
       <Fade bottom>
       <div className="flex flex-col max-w-[1296px]  mx-auto items-center justify-center">
-        <h1 className="text-4xl mt-10 md:mt-[130px] mb-4 md:mb-[30px] font-extrabold md:text-[57px] text-center">
+        <h1 className="text-4xl mt-10 md:mt-[120px] mb-4 md:mb-[22px] font-extrabold md:text-[57px] text-center">
           Our Present <span className="primary-color">Statics</span>
         </h1>
-        <p className="text-lg text-[#444444] text-center mb-5 md:mb-[60px] max-w-lg">
+        <p className="text-lg text-[#444444] text-center mb-5 md:mb-[53px] max-w-lg">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
           urna sed erat tortor aliquam ipsum
         </p>
-        <div className="flex flex-col justify-center 2xl:justify-between  flex-wrap  mx-2 2xl:mx-0 mb-5 md:mb-28 gap-6 md:flex-row">
+        <div className="flex flex-col justify-center 2xl:justify-between  flex-wrap  mx-2 2xl:mx-0 mb-5 md:mb-[120px] gap-6 md:flex-row">
           {
             statics.map(stat => (
               <div key={stat.title} className="flex  gap-7  md:w-[416px] items-center bg-white rounded-lg px-[30px] py-6">

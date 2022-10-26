@@ -23,7 +23,11 @@ const Header = () => {
   };
   useEffect(() => {
     window.addEventListener("scroll", changeNavColor);
+    document.addEventListener("mouseup", function () {
+      setDropdown(false);
+    });
   }, []);
+
   return (
     <nav
       className={`w-full fixed z-50 px-1 xl:px-0 navbar py-4 xl:py-[19.5px] ${
@@ -33,37 +37,38 @@ const Header = () => {
       <div className="max-w-[1296px] relative z-40 mx-auto flex flex-wrap justify-between items-center">
         <Link href="/">
           <a className="flex items-center pl-2 md:pl-0">
-            <Image src="/icon.png" height={36} width={102} />
+            <Image src="/icon.png" height={36} width={102} alt="logo" />
           </a>
         </Link>
 
         <div
           className={` w-screen md:block md:w-auto ${
-            open ? "block absolute -left-1 h-[92vh] z-50 bg-[#5401BF] top-14" : "hidden"
+            open
+              ? "block absolute -left-1 h-[92vh] z-50 bg-[#5401BF] top-14"
+              : "hidden"
           }`}
         >
           <ul className="flex items-start px-4 md:px-0 md:items-center flex-col md:p-4 mt-4 bg-body rounded-lg md:flex-row lg:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:gap-5">
-            {
-              [['/', 'Home'], ['/about', 'About'], ['/schedule', 'Schedule']].map(([url,title]) => (
-                <li key={title} onClick={() => setOpen(false)}>
-              <Link href={url}>
-                <a
-                  className="block text-white text-lg text-x py-2 pr-4 md:pl-3  rounded md:bg-transparent hover:text-primary  md:p-0 dark:text-white"
-                  aria-current="page"
-                >
-                 {title}
-                </a>
-              </Link>
-            </li>
-              ))
-            }
-            
-         
-            
+            {[
+              ["/", "Home"],
+              ["/about", "About"],
+              ["/schedule", "Schedule"],
+            ].map(([url, title]) => (
+              <li key={title} onClick={() => setOpen(false)}>
+                <Link href={url}>
+                  <a
+                    className="block text-white text-lg text-x py-2 pr-4 md:pl-3  rounded md:bg-transparent hover:text-primary  md:p-0 dark:text-white"
+                    aria-current="page"
+                  >
+                    {title}
+                  </a>
+                </Link>
+              </li>
+            ))}
+
             <li>
               <a
                 onMouseOver={() => setDropdown(!dropdown)}
-                
                 className=" flex items-center gap-2 relative cursor-pointer text-white text-lg text-x py-2 pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 "
               >
                 Pages <BsChevronDown />{" "}
@@ -71,19 +76,21 @@ const Header = () => {
               <div className="relative">
                 {dropdown && (
                   <div className="absolute bg-[#3F0985] w-40 md:top-[35px]  flex flex-col text-white text-lg">
-                    {
-                      [['/speakers', 'Speakers'], ['/price', 'Price'], ['/gallery', 'Gallery'], ['/contact', 'Contact Us']].map(([url, title]) => (
-                        <Link key={title} href={url}>
-                      <a
-                        onClick={handleDropdownClick}
-                        className="py-2 px-4 select-none hover:bg-blue-600"
-                      >
-                       {title}
-                      </a>
-                    </Link>
-                      ))
-                    }
-                  
+                    {[
+                      ["/speakers", "Speakers"],
+                      ["/price", "Price"],
+                      ["/gallery", "Gallery"],
+                      ["/contact", "Contact Us"],
+                    ].map(([url, title]) => (
+                      <Link key={title} href={url}>
+                        <a
+                          onClick={handleDropdownClick}
+                          className="py-2 px-4 select-none hover:bg-blue-600"
+                        >
+                          {title}
+                        </a>
+                      </Link>
+                    ))}
                   </div>
                 )}
               </div>

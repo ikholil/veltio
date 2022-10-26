@@ -7,11 +7,11 @@ const Pricing = () => {
       <div className="bg-[url('/image/pricing/bg.png')] min-h-[850px] relative flex items-center justify-center">
      
       <Fade bottom>
-      <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto mb-10 md:mb-[125px]">
+      <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto mb-10 md:mb-[120px]">
         <h2 className="text-white  font-bold mt-5 md:mt-[120px] text-2xl md:text-[57px]">
           Get Your Ticket
         </h2>
-        <p className="md:max-w-lg  mb-4 md:mb-14 text-white text-center mt-5 text-sm md:text-lg md:mt-[30px]">
+        <p className="md:max-w-lg  mb-4 md:mb-14 text-white text-center mt-5 text-sm md:text-lg md:mt-[28px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum urna sed erat tortor aliquam ipsum
         </p>
         <div className="flex flex-col px-2 xl:px-0 items-stretch justify-center flex-wrap lg:flex-row gap-6">

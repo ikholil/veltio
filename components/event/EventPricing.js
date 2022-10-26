@@ -5,7 +5,7 @@ const Event = () => {
   return (
    <div>
      <div className="min-h-[500px] bg-[url('/image/pricing/partnar-bg.png')] bg-no-repeat h-full relative">
-      <div className="max-w-[1296px] mx-auto py-6 md:py-12 lg:py-[120px]">
+      <div className="max-w-[1296px] mx-auto py-6 md:py-12 lg:pb-[110px] lg:pt-[120px]">
        <Fade right>
        <div className="flex flex-col justify-center items-center ">
           <h2 className="text-3xl md:text-[57px] text-white font-extrabold text-center ">

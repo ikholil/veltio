@@ -17,13 +17,13 @@ const Banner = () => {
       
         <div className="max-w-[1296px] mx-auto z-20 flex flex-col md:flex-row  lg:pt-10 items-center ">
           <Fade bottom>
-          <div className="z-10 pt-24 px-4 xl:px-0">
-            <p className="text-white text-2xl font-bold mb-3 md:mb-7">Professional</p>
-            <h1 className="font-extrabold leading-tight text-white text-5xl md:text-[76px]">
+          <div className="z-10 px-4 xl:px-0">
+            <p className="text-white text-2xl font-semibold mb-2 ">Professional</p>
+            <h1 className="font-bold leading-tight text-white text-5xl md:text-[76px]">
               Global <span className="primary-color">Business</span> Conference
             </h1>
-            <ul className="mt-10">
-              <li className="text-2xl flex mb-7 items-center gap-3 text-white">
+            <ul className="mt-5">
+              <li className="text-2xl flex mb-4 items-center gap-3 text-white">
                 {" "}
                 <GoPrimitiveDot className="text-[#F112A2]" /> 25-28 July 2022
               </li>
@@ -33,14 +33,14 @@ const Banner = () => {
                 California
               </li>
             </ul>
-            <button className="px-16 mt-10 py-4 mb-10 rounded-md bg-white primary-color font-bold">
+            <button className="px-16 mt-8 py-4  rounded-md bg-white primary-color font-bold">
               Get Ticket
             </button>
           </div>
           </Fade>
           
           <Fade delay={500} bottom>
-          <div className=" z-20 md:-right-14 -bottom-2 md:-bottom-10 relative">
+          <div className=" z-20 md:-right-14 -bottom-2 md:-bottom-10 2xl:-bottom-12 relative">
             <Image
               src={bannerImg}
               className=""

@@ -20,7 +20,7 @@ const GalleryPage = () => {
       </Fade>
       
      
-       <div className="grid mx-2 xl:mx-0 grid-cols-12 mb-5  gap-4">
+       <div className="grid mx-2 xl:mx-0 grid-cols-12 mb-[50px]  gap-4">
             <div className="col-span-12 md:col-span-4 ">
                 <Image className="" src='/image/gallery/img1.png' width={432} height={407} alt="gallery photos" />
             </div>
@@ -50,7 +50,7 @@ const GalleryPage = () => {
             </div>
         </div>
       
-        <div className="flex justify-center mb-5 md:mb-20 gap-2">
+        <div className="flex justify-center mb-5 md:mb-[120px] gap-2">
             <a href="#" className="bg-[#F112A2] px-2 text-white border border-[#F112A2]">1</a>
             <a href="#" className="text-[#F112A2] px-2 border border-[#F112A2]">2</a>
             <a href="#" className="text-[#F112A2] px-2 border border-[#F112A2]"> {">"}</a>

@@ -12,17 +12,17 @@ const Team = () => {
   };
   return (
     <div>
-      <div className="bg-[url('/image/team/team-bg.png')] min-h-[850px] relative flex items-center justify-center">
+      <div className="bg-[url('/image/team/team-bg.png')] relative flex items-center justify-center">
         <Fade bottom>
-          <div className="py-[120px]   max-w-[1296px] mx-auto z-10">
-            <h2 className="text-center text-4xl md:text-[57px] text-white font-extrabold mb-7">
+          <div className="py-[120px] max-w-[1296px] mx-auto z-10">
+            <h2 className="text-center text-4xl md:text-[57px] text-white font-extrabold mb-[39px]">
               Meet Our Event Speakers
             </h2>
-            <p className="text-white text-lg px-2 text-center mb-8 md:mb-14">
+            <p className="text-white text-lg px-2 text-center mb-8 md:mb-[37px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum{" "}
               <br /> urna sed erat tortor aliquam ipsum
             </p>
-            <div className="flex flex-col flex-wrap md:flex-row gap-6 justify-center items-center py-5 text-center">
+            <div className="flex flex-col flex-wrap md:flex-row gap-6 justify-center items-center pt-5 text-center">
               {speakers.slice(0, 4).map((person) => (
                 <div
                   key={person.name}

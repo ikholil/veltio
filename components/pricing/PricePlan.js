@@ -8,10 +8,10 @@ const Pricing = () => {
      
       <Fade bottom>
       <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto mb-10 md:mb-28">
-        <h2 className="  font-bold mt-5 md:mt-24 text-2xl md:text-[57px]">
+        <h2 className="  font-bold mt-5 md:mt-[112px] text-2xl md:text-[57px]">
           Get Your <span className="text-[#5A00CC]">Ticket</span> 
         </h2>
-        <p className="md:max-w-lg mx-4 mb-4 md:mb-14 text-white text-center mt-5 text-sm md:text-lg md:mt-8">
+        <p className="md:max-w-lg mx-4 mb-4 md:mb-14  text-center mt-5 text-sm md:text-lg md:mt-[29px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum urna sed erat tortor aliquam ipsum
         </p>
         <div className="flex flex-col px-2 xl:px-0 items-stretch justify-center flex-wrap lg:flex-row gap-6">

@@ -12,7 +12,7 @@ const ContactInfo = () => {
         
        <Fade left>
        <div className="text-center">
-       <h2 className="text-center font-bold mt-5 md:mt-24 mb-10 text-2xl md:text-[57px]">
+       <h2 className="text-center font-bold mt-5 md:mt-[130px] mb-[27px] text-2xl md:text-[57px]">
          Contact <span className="text-[#5A00CC]">Information</span>
        </h2>
        <p className=" mx-4 mb-4 md:mb-14 text-center text-sm md:text-lg md:mt-8">
@@ -21,7 +21,7 @@ const ContactInfo = () => {
        </div>
        </Fade>
        <Fade right>
-       <div className="flex flex-col justify-center xl:justify-between flex-wrap md:flex-row gap-5 mb-5 md:mb-20">
+       <div className="flex flex-col justify-center xl:justify-between flex-wrap md:flex-row gap-5 mb-5 md:mb-[120px]">
          {
              contactInfo.map((info) => (
                  <div className="p-7 mx-3 md:mx-0 rounded-md shadow-xl" key={info.id}>
