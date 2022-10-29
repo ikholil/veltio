@@ -34,7 +34,7 @@ const Pricing = () => {
                     </ul>
                     <div className="flex justify-center w-full">
 
-                    <button style={{alignSelf:'end'}} className="text-white font-bold text-lg py-2 md:py-4 rounded-md px-4 md:px-6 bg-[#F112A2] ">Purchase Ticket</button>
+                    <button style={{alignSelf:'end'}} className="text-white font-semibold text-lg py-2 md:py-4 rounded-md px-4 md:px-6 bg-[#F112A2] ">Purchase Ticket</button>
                     </div>
                    </div>
                   </div>

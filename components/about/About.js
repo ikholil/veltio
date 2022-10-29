@@ -7,7 +7,7 @@ bannerStates;
 const About = () => {
   return (
     <div className="relative">
-      <div className="mt-4 md:-mt-[77px] z-20  relative max-w-[1296px] mx-auto">
+      <div className="mt-4 md:mt-0 xl:-mt-[77px] z-20  relative max-w-[1296px] mx-auto">
         <div className="flex gap-5 mx-2 xl:mx-0 md:gap-0 flex-col md:flex-row flex-wrap  bg-white justify-around  md:my-0 rounded-none md:rounded-lg shadow-lg pt-7 pb-10 z-10 ">
           {bannerStates.map((item) => (
             <div className="flex flex-col items-center" key={item.title}>

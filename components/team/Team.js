@@ -12,7 +12,7 @@ const Team = () => {
   };
   return (
     <div>
-      <div className="bg-[url('/image/team/team-bg.png')] relative flex items-center justify-center">
+      <div className="bg-[url('/image/team/team-bg.png')] bg-no-repeat bg-cover relative flex items-center justify-center">
         <Fade bottom>
           <div className="py-[120px] max-w-[1296px] mx-auto z-10">
             <h2 className="text-center text-4xl md:text-[57px] text-white font-extrabold mb-[39px]">

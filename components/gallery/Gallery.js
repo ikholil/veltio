@@ -20,7 +20,7 @@ const Gallery = () => {
        <div className="grid grid-cols-12 gap-6 items-center content-center  mx-2 md:mx-0">
          {galleryImages.map((img) => (
            <div key={img} className="col-span-12 md:col-span-6 cursor-pointer lg:col-span-4">
-             <Image src={img} height={287} width={416} alt="gallery img"/>
+             <Image className="hover:scale-125 transition-all duration-700" src={img} height={287} width={416} alt="gallery img"/>
            </div>
          ))}
        </div>

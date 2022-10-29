@@ -11,7 +11,7 @@ const Team = () => {
   }
   return (
     <div className="relative">
-         <div className="bg-[url('/image/team/allteam-bg-dot.png')] h-full w-screen absolute">
+         <div className="bg-[url('/image/team/allteam-bg-dot.png')] bg-no-repeat bg-cover h-full w-screen absolute">
          </div>
       <div className="my-[120px]   max-w-[1296px] mx-auto z-10">
        

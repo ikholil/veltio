@@ -30,9 +30,9 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row gap-2 px-2 md:px-0 max-w-md mx-auto" >
 
             <input type="text" className="border-b py-1 w-auto md:w-[250px] border-black focus:outline-none focus:border-b foucs:border-black" placeholder="Email" />
-            <button className="py-2 md:py-3 px-3 md:px-8 bg-[#F112A2] text-white">Subscribe</button>
+            <button className="py-2  px-3 hover:bg-white hover:text-[#F112A2] border-2 transition-all duration-300 border-[#F112A2] hover:border-2 hover:border-[#F112A2] md:px-8 bg-[#F112A2] text-white">Subscribe</button>
             </div>
-          </div>
+        </div>
         </div>
         <div className="flex mx-3 2xl:mx-0 mb-4 pl-16 pt-5 md:pl-0 md:pt-0 md:items-center flex-col md:flex-row justify-between ">
           <div className="cursor-pointer md:-bottom-2 relative">
