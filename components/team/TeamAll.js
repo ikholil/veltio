@@ -13,9 +13,9 @@ const Team = () => {
     <div className="relative">
          <div className="bg-[url('/image/team/allteam-bg-dot.png')] bg-no-repeat bg-cover h-full w-screen absolute">
          </div>
-      <div className="my-[120px]   max-w-[1296px] mx-auto z-10">
+      <div className="my-20 md:my-[120px]   max-w-[1296px] mx-auto z-10">
        
-       <h2 className="text-center text-4xl md:text-[57px]  font-extrabold mb-[30px]">
+       <h2 className="text-center text-3xl md:text-[57px]  font-bold mb-[30px]">
           Meet Our Event <span className="text-[#F112A2]"> Speakers</span>
         </h2>
         <p className=" text-lg px-2 text-center mt-10 mb-8 md:mb-[56px]">
@@ -23,7 +23,7 @@ const Team = () => {
           <br /> urna sed erat tortor aliquam ipsum
         </p>
       
-        <div className="flex flex-col flex-wrap md:flex-row gap-6 gap-y-14 justify-center items-center text-center">
+        <div className="flex flex-col mx-3 lg:mx-0 flex-wrap md:flex-row gap-6 gap-y-14 justify-center items-center text-center">
           {speakers.map((person) => (
             <div
               key={person.name}

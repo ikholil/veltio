@@ -4,11 +4,11 @@ import { Fade } from "react-reveal";
 const Event = () => {
   return (
     <div className="relative">
-      <div className="mb-[97px]  mt-[112px]">
+      <div className="mb-[97px]  mt-20 md:mt-[112px]">
         <div className="max-w-[1296px] mx-auto ">
           <Fade bottom>
             <div className="flex flex-col justify-center items-center ">
-              <h2 className="text-5xl md:text-[57px] font-extrabold text-center">
+              <h2 className="text-4xl md:text-[57px] font-bold text-center">
                 Our Event <span className="text-[#5A00CC]">Partner</span>
               </h2>
 
@@ -18,8 +18,8 @@ const Event = () => {
               </p>
             </div>
 
-            <div className="flex flex-col justify-center items-center px-5 md:px-0 md:flex-row gap-6 flex-wrap mt-3 md:mt-[40px] ">
-              <div>
+            <div className="flex flex-col justify-center items-center px-5 md:px-0 md:flex-row gap-10 md:gap-4 flex-wrap mt-8 mb:mt-3 md:mt-[40px] ">
+              <div className="w-9/12 flex justify-center md:w-auto">
                 <Image
                   src="/image/event/partner4.png"
                   alt="our partner"
@@ -27,7 +27,7 @@ const Event = () => {
                   width={306}
                 />
               </div>
-              <div>
+              <div className="w-9/12 flex justify-center md:w-auto">
                 <Image
                   src="/image/event/partner2.png"
                   alt="our partner"
@@ -35,7 +35,7 @@ const Event = () => {
                   width={306}
                 />
               </div>
-              <div>
+              <div className="w-9/12 flex justify-center md:w-auto">
                 <Image
                   src="/image/event/partner3.png"
                   alt="our partner"
@@ -43,7 +43,7 @@ const Event = () => {
                   width={306}
                 />
               </div>
-              <div>
+              <div className="w-9/12 flex justify-center md:w-auto">
                 <Image
                   src="/image/event/partner1.png"
                   alt="our partner"
@@ -54,7 +54,7 @@ const Event = () => {
             </div>
           </Fade>
         </div>
-        <div className="absolute -z-10 top-10 left-24">
+        <div className="absolute hidden xl:block -z-10 top-10 left-24">
           <Image
             src="/image/event/event-shape.png"
             height={260}
@@ -62,7 +62,7 @@ const Event = () => {
             alt="shape"
           /> 
         </div>
-        <div className="absolute -z-10 -top-24 right-0">
+        <div className="hidden xl:block absolute  -z-10 -top-24 right-0">
           <Image
             src="/image/event/event-shape2.png"
             height={400}

@@ -25,11 +25,11 @@ const ContactInfo = () => {
          {
              contactInfo.map((info) => (
                  <div className="p-7 mx-3 md:mx-0 rounded-md shadow-xl" key={info.id}>
-                     <h3 className="primary-color font-bold text-[32px] mb-5">{info.title}</h3>
+                     <h3 className="primary-color font-semibold text-xl md:text-[32px] mb-5">{info.title}</h3>
                      <ul>
-                         <li className="text-[#222] text-lg mb-3"> <strong>Email: </strong>{info.contacts.email}</li>
-                         <li className="text-[#222] text-lg mb-3"> <strong>Phone: </strong>{info.contacts.phone}</li>
-                         <li className="text-[#222] text-lg mb-3"> <strong>Address: </strong>{info.contacts.address}</li>
+                         <li className="text-[#222] text-base md:text-lg mb-3"> <strong>Email: </strong>{info.contacts.email}</li>
+                         <li className="text-[#222] text-base md:text-lg mb-3"> <strong>Phone: </strong>{info.contacts.phone}</li>
+                         <li className="text-[#222] text-base md:text-lg mb-3"> <strong>Address: </strong>{info.contacts.address}</li>
                      </ul>
                  </div>
              ))

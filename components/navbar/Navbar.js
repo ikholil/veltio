@@ -69,9 +69,9 @@ const Header = () => {
               >
                 Pages <BsChevronDown />{" "}
               </a>
-              <div className="relative">
+              <span className="relative">
                
-                  <div className="absolute dropdown bg-[#3F0985] w-40 md:top-[36px]  hidden text-white text-lg">
+                  <span className="absolute dropdown bg-[#3F0985] w-40 md:top-[36px]  hidden text-white text-lg">
                     {[
                       ["/speakers", "Speakers"],
                       ["/price", "Price"],
@@ -87,9 +87,9 @@ const Header = () => {
                         </a>
                       </Link>
                     ))}
-                  </div>
+                  </span>
                
-              </div>
+              </span>
             </li>
             <div className=" md:hidden mt-2">
               <Button name="Book Ticket" class="primary-color bg-white" />

@@ -10,10 +10,10 @@ const GalleryPage = () => {
       <div className="max-w-[1296px] mx-auto">
       <Fade right>
       <div className="text-center">
-          <h2 className="text-center font-extrabold mt-10 md:mt-[120px] mb-10 text-4xl md:text-[57px]">
+          <h2 className="text-center font-extrabold mt-16 md:mt-[120px] mb-10 text-4xl md:text-[57px]">
             Our <span className="text-[#5A00CC]">Gallery</span>
           </h2>
-          <p className=" mx-4 mb-4 md:mb-14 text-center text-sm md:text-lg md:mt-8">
+          <p className=" mx-4 mb-8 md:mb-14 text-center text-sm md:text-lg md:mt-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
         </div>
@@ -50,7 +50,7 @@ const GalleryPage = () => {
             </div>
         </div>
       
-        <div className="flex justify-center mb-5 md:mb-[120px] gap-2">
+        <div className="flex justify-center mb-10 md:mb-[120px] gap-2">
             <a href="#" className="bg-[#F112A2] px-2 text-white border border-[#F112A2]">1</a>
             <a href="#" className="text-[#F112A2] px-2 border border-[#F112A2]">2</a>
             <a href="#" className="text-[#F112A2] px-2 border border-[#F112A2]"> {">"}</a>
