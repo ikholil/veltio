@@ -17,7 +17,7 @@ const ContactForm = () => {
         <div className="bg-[url('/image/contact/form-bg.png')] bg-no-repeat opacity-10 min-h-[1050px] w-full absolute top-0 flex items-center justify-center bg-cover"></div>
         <Fade bottom>
           <div className="  max-w-[1296px] mx-3 md:mx-auto h-full z-10 relative">
-            <h2 className="text-center text-3xl pt-14 md:pt-[120px] md:text-[57px] font-bold mb-10">
+            <h2 className="text-center text-3xl pt-14 md:pt-[120px] md:text-[57px] font-bold mb-6 md:mb-10">
               Send <span className="text-[#F112A2]">Message</span>
             </h2>
             <p className="text-[#444] text-lg px-2 text-center mb-8 md:mb-14">
@@ -45,7 +45,7 @@ const ContactForm = () => {
                   placeholder="Type a Message"
                   className="mb-[53px] p-5 w-full rounded-md focus:outline-none"
                 />
-                <div className="flex justify-center  mb-10 md:mb-[120px]">
+                <div className="flex justify-center  mb-16 md:mb-[120px]">
                   <Button class="bg-[#F112A2] text-white" name="Contact Us" />
                 </div>
               </form>

@@ -15,7 +15,7 @@ const SpeakerDetails = () => {
     <div className="relative">
       <div className="bg-[url('/image/team/single-speaker-bg.png')] -z-10 hidden md:block h-full w-full absolute top-0"></div>
       
-      <div className="max-w-[1296px] mx-2  xl:mx-auto  md:gap-8 xl:gap-20 flex flex-col lg:flex-row my-[120px]">
+      <div className="max-w-[1296px] mx-2  xl:mx-auto  md:gap-8 xl:gap-20 flex flex-col lg:flex-row my-[60px] md:my-[120px]">
         <div className="shadow-xl rounded-md flex flex-col items-center ">
           <div className="md:h-[250px] md:w-[250px] my-[25px] rounded-full border-4 border-[#F112A2]">
             <Image
@@ -38,7 +38,7 @@ const SpeakerDetails = () => {
           <div className="mb-[30px]"></div>
         </div>
         <div className="col-span-12 md:col-span-7 mx-3 md:mx-0">
-          <h2 className="text-4xl md:text-[57px] text-[#F112A2] font-bold mb-[40px]">
+          <h2 className="text-4xl mt-10 md:mt-0 md:text-[57px] text-[#F112A2] font-bold mb-6 md:mb-[40px]">
             Biography
           </h2>
           <p className="text-lg text-[#444] mb-4 md:mb-[46px]">

@@ -8,9 +8,9 @@ const About = () => {
   return (
     <div className="relative">
       <div className="mt-4 md:mt-0 xl:-mt-[77px] z-20  relative max-w-[1296px] mx-auto">
-        <div className="flex gap-5 mx-4 xl:mx-0 md:gap-0 flex-col md:flex-row flex-wrap  bg-white justify-around  md:my-0 rounded-none md:rounded-lg shadow-lg pt-7 pb-10 z-10 ">
+        <div className="flex gap-5 px-2 md:px-14 mx-4 xl:mx-0   flex-wrap  bg-white justify-around  md:my-0 rounded-none md:rounded-lg shadow-lg py-10 z-10 ">
           {bannerStates.map((item, i) => (
-            <div className="flex flex-col items-center" key={item.title}>
+            <div className="flex w-[120px] md:w-auto flex-col items-center" key={item.title}>
               <h1 className={`text-[#5A00CC] ${i==0?'font-bold ':'font-semibold'} text-3xl md:text-[43px] `}>
                 <CountUp end={item.number} />
                 <span className="primary-color">+</span>
@@ -30,26 +30,26 @@ const About = () => {
             <div className="absolute -top-3 hidden md:block -right-3">
               <Image width='113' height={124}  src='/image/about/rectangle.png' alt="about image" />
             </div>
-            <div className=" mx-2 md:mx-0">
+            <div className=" mx-2 md:mx-0 rounded-lg">
               <Image
                 src="/image/about/image3.png"
-                className="rounded-lg shadow-md"
+                className="rounded-lg shadow-md hover:scale-125 transition-all duration-700"
                 height={450}
                 width={380}
                 alt="about image"
               />
             </div>
-            <div className="flex flex-col gap-5 mb-20 md:mb-0 mx-2 md:mx-0">
+            <div className="flex rounded-lg flex-col gap-5 mb-20 md:mb-0 mx-2 md:mx-0">
               <Image
                 src="/image/about/image1.png"
-                className="rounded-lg shadow-md"
+                className="rounded-lg shadow-md hover:scale-125 transition-all duration-700"
                 height={300}
                 width={380}
                 alt="img"
               />
               <Image
                 src="/image/about/image2.png"
-                className="rounded-lg shadow-md"
+                className="rounded-lg shadow-md hover:scale-125 transition-all duration-700"
                 height={300}
                 width={380}
                 alt="about image"
@@ -58,7 +58,7 @@ const About = () => {
           </div>
          </Fade>
          <Fade right>
-         <div className="flex flex-col flex-wrap lg:col-span-6 px-6 md:px-0 mr-0 md:mr-20">
+         <div className="flex flex-col flex-wrap lg:col-span-6 px-3 md:px-0 mr-0 md:mr-20">
             <h2 className="text-3xl my-16 md:mt-0 md:text-[57px] leading-tight mb-2 font-bold">
               Wolcome To Global <span className="text-[#5A00CC]">Business</span>{" "}
               Conference
@@ -68,11 +68,11 @@ const About = () => {
               urna sed erat tortor aliquam ipsum auctor ut. Consectetur non,
               platea id porttitor.
             </p>
-            <div className="mb-5 md:mb-0">
-              <button className="px-10 py-3 bg-[#5A00CC]  mb-4 md:mb-0 font-semibold text-white mr-5 rounded-md">
+            <div className="md:mb-5">
+              <button className="px-5 py-2 md:px-10  md:py-3 bg-[#5A00CC]  mb-4 md:mb-0 font-semibold text-white mr-3 md:mr-5 rounded-md">
                 Get Ticket
               </button>
-              <button className="px-10 py-3 text-[#5A00CC] hover:bg-[#4A00CC] transition-colors hover:text-white border-[1px] border-[#5A00CC] font-semibold bg-white mr-5 rounded-md">
+              <button className="px-5 py-2 md:px-10  md:py-3 text-[#5A00CC] hover:bg-[#4A00CC] transition-colors hover:text-white border-[1px] border-[#5A00CC] font-semibold bg-white md:mr-5 rounded-md">
                 Learn More
               </button>
             </div>

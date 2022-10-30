@@ -23,7 +23,7 @@ const Team = () => {
           <br /> urna sed erat tortor aliquam ipsum
         </p>
       
-        <div className="flex flex-col mx-3 lg:mx-0 flex-wrap md:flex-row gap-6 gap-y-14 justify-center items-center text-center">
+        <div className="flex flex-col mx-3 lg:mx-0 flex-wrap md:flex-row gap-6 md:gap-y-14 justify-center items-center text-center">
           {speakers.map((person) => (
             <div
               key={person.name}

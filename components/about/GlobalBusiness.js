@@ -5,7 +5,7 @@ import { aboutBusiness } from '../../data/aboutBusiness';
 aboutBusiness
 const GlobalBusiness = () => {
     return (
-        <div className='max-w-[1296px] mx-auto py-10 md:my-[120px]'>
+        <div className='max-w-[1296px] mx-auto py-16 md:my-[120px]'>
             <div className="grid grid-cols-12 mx-3 2xl:mx-0 2xl:gap-5 items-center">
                 <Fade left>
                 <div className='col-span-12 mx-3 xl:mx-0 flex justify-center lg:col-span-4 relative'>

@@ -12,7 +12,7 @@ const ContactInfo = () => {
         
        <Fade left>
        <div className="text-center">
-       <h2 className="text-center font-bold mt-5 md:mt-[130px] mb-[27px] text-2xl md:text-[57px]">
+       <h2 className="text-center font-bold mt-14 md:mt-[130px] mb-5 md:mb-[27px] text-3xl md:text-[57px]">
          Contact <span className="text-[#5A00CC]">Information</span>
        </h2>
        <p className=" mx-4 mb-4 md:mb-14 text-center text-sm md:text-lg md:mt-8">

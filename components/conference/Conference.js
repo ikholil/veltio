@@ -6,12 +6,12 @@ const Conference = () => {
   return (
     <div>
       <div className="relative">
-        <div className="max-w-[1296px] bg-[url('/image/conference/bg.png')] bg-conference flex flex-col mb-12 items-center mx-auto min-h-[1200px]">
+        <div className="max-w-[1296px] bg-[url('/image/conference/bg.png')] bg-conference flex flex-col  items-center mx-auto">
           <Fade bottom>
             <h2 className="text-4xl md:text-[57px] font-bold text-center mt-14 md:mt-[120px]">
               Conference <span className="text-[#5A00CC]">Schedule</span>
             </h2>
-            <p className="md:max-w-md text-center text-lg mx-3 md:text-lg  mt-4">
+            <p className="md:max-w-md text-center text-lg mx-3 md:text-lg  mt-6">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
               urna sed erat tortor aliquam ipsum
             </p>

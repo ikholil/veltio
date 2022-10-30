@@ -16,16 +16,8 @@ const Footer = () => {
           />
         </div>
         <div className="grid place-content-center px-3 xl:px-0  w-full">
-          <div className="w-auto lg:w-[800px] relative flex flex-col justify-center items-center bg-white px-4 rounded-md my-20 md:my-[120px] py-6 md:py-16 mx-2 md:mx-auto">
-            <div className="absolute rounded-md top-0 left-0  hidden lg:block">
-              <Image
-                src="/image/footer/footer-shape.png"
-                className="rounded-md"
-                width={200}
-                height={228}
-                alt="footer shape"
-              />
-            </div>
+          <div className="w-auto lg:w-[800px] lg:bg-[url('/image/footer/footer-shape.png')] bg-no-repeat bg-left  relative flex flex-col justify-center items-center bg-white px-4 rounded-md my-20 md:my-[120px] py-6 md:py-16 mx-2 md:mx-auto">
+           
             <div className="absolute rounded-md top-3 right-2">
               <Image
                 src="/image/footer/dots2.png"
@@ -38,11 +30,12 @@ const Footer = () => {
             <h2 className="text-xl md:text-3xl font-bold mx-2 text-center mb-4 text-[#222]">
               SUBSCRIBE TO <span className="text-[#5A00CC]">NEWSLETTER</span>
             </h2>
-            <div className="flex flex-col md:flex-row gap-2 px-2 md:px-0 max-w-md mx-auto">
+            <div className="flex flex-col md:flex-row gap-2  md:px-0 max-w-md mx-auto">
               <input
                 type="text"
-                className="border-b py-1 w-auto md:w-[250px] border-black focus:outline-none focus:border-b foucs:border-black"
+                className="border-b py-1 w-full md:w-[250px] border-black focus:outline-none focus:border-b foucs:border-black"
                 placeholder="Email"
+                size={80}
               />
               <button className="py-2  px-3 hover:bg-white hover:text-[#F112A2] border-2 transition-all duration-300 border-[#F112A2] hover:border-2 hover:border-[#F112A2] md:px-8 bg-[#F112A2] text-white">
                 Subscribe
@@ -80,7 +73,7 @@ const Footer = () => {
           <p className="text-base mb-4 md:mb-0 text-[#b3b3b3]">
             © 2022 Veltio. All rights reserved
           </p>
-          <Social class="text-white" size={50} />
+          <Social class="text-white" size={45} />
         </div>
       </div>
     </div>

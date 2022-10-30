@@ -15,10 +15,10 @@ const Team = () => {
       <div className="bg-[url('/image/team/team-bg.png')] bg-no-repeat bg-cover relative flex items-center justify-center">
         <Fade bottom>
           <div className="py-[80px] md:py-[120px] max-w-[1296px] mx-auto z-10">
-            <h2 className="text-center text-4xl lg:text-[57px] text-white font-bold mb-[39px]">
+            <h2 className="text-center mx-5 text-3xl lg:text-[57px] text-white font-bold mb-[39px]">
               Meet Our Event Speakers
             </h2>
-            <p className="text-white text-lg px-2 text-center mb-8 md:mb-[37px]">
+            <p className="text-white text-base md:text-lg px-2 text-center mb-8 md:mb-[37px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum{" "}
               <br /> urna sed erat tortor aliquam ipsum
             </p>
@@ -38,10 +38,10 @@ const Team = () => {
                   />
 
                   <div className="bg-[#5A00CC] w-[95%] pt-10 pb-4 rounded-b-md rounded-t-[50%] transition-all card-inner">
-                    <h4 className="text-white text-2xl  font-bold">
+                    <h4 className="text-white text-xl md:text-2xl  font-bold">
                       {person.name}
                     </h4>
-                    <p className="text-white text-lg my-2">Speakers</p>
+                    <p className="text-white text-base md:text-lg my-2">Speakers</p>
                     <Social class="text-white" size={40} />
                   </div>
                 </div>
