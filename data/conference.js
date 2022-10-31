@@ -1,3 +1,9 @@
+
+import speaker1 from '../public/image/conference/1.png'
+import speaker2 from '../public/image/conference/2.png'
+import speaker3 from '../public/image/conference/3.png'
+
+
 export const conference = [
   {
     id: "1",
@@ -10,19 +16,19 @@ export const conference = [
             time: "01 AM-03 PM",
             title: "Business Analytics",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eget pharetra, pharetra netus dictum massa cursus nisi. Tincidunt amet massa quis purus tincidunt varius sed ultrices.",
-            img: "/image/team/team3.png",
+            img: speaker1,
         },
         {
             time: "12 PM-01 PM",
             title: "Business Management",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eget pharetra, pharetra netus dictum massa cursus nisi. Tincidunt amet massa quis purus tincidunt varius sed ultrices.",
-            img: "/image/team/team2.png",
+            img: speaker2,
           },
           {
             time: "10 AM-12 PM",
             title: "Business Introduction",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eget pharetra, pharetra netus dictum massa cursus nisi. Tincidunt amet massa quis purus tincidunt varius sed ultrices.",
-            img: "/image/team/team1.png",
+            img: speaker3,
           },
     ]
   },
@@ -35,19 +41,19 @@ export const conference = [
             time: "10 AM-12 PM",
             title: "Business Introduction",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eget pharetra, pharetra netus dictum massa cursus nisi. Tincidunt amet massa quis purus tincidunt varius sed ultrices.",
-            img: "/image/team/team4.png",
+            img: speaker3,
           },
           {
             time: "01 AM-03 PM",
             title: "Business Analytics",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eget pharetra, pharetra netus dictum massa cursus nisi. Tincidunt amet massa quis purus tincidunt varius sed ultrices.",
-            img: "/image/team/team2.png",
+            img: speaker1,
         },
         {
             time: "12 PM-01 PM",
             title: "Business Management",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eget pharetra, pharetra netus dictum massa cursus nisi. Tincidunt amet massa quis purus tincidunt varius sed ultrices.",
-            img: "/image/team/team1.png",
+            img: speaker2,
           },
        
     ]
@@ -62,19 +68,19 @@ export const conference = [
             time: "12 PM-01 PM",
             title: "Business Management",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eget pharetra, pharetra netus dictum massa cursus nisi. Tincidunt amet massa quis purus tincidunt varius sed ultrices.",
-            img: "/image/team/team3.png",
+            img: speaker2,
           },
           {
             time: "10 AM-12 PM",
             title: "Business Introduction",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eget pharetra, pharetra netus dictum massa cursus nisi. Tincidunt amet massa quis purus tincidunt varius sed ultrices.",
-            img: "/image/team/team2.png",
+            img: speaker3,
           },
         {
             time: "01 AM-03 PM",
             title: "Business Analytics",
             desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae eget pharetra, pharetra netus dictum massa cursus nisi. Tincidunt amet massa quis purus tincidunt varius sed ultrices.",
-            img: "/image/team/team4.png",
+            img: speaker1,
         },
     ]
   }

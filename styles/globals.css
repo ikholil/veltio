@@ -6,12 +6,18 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 @layer components {
     .primary-color {
       @apply text-[#F112A2]
+    }
+    .zoom{
+      @apply hover:scale-150 transition-all duration-1000
+    }
+    .bluehover{
+      @apply hover:bg-blue-500 hover:text-white transition-colors duration-300
     }
   }
 .card:hover .card-inner{
