@@ -6,7 +6,7 @@ import { eventHome } from "../../data/eventhome";
 const Event = () => {
   return (
     <div className="relative">
-      <div className="mb-[97px]  mt-20 md:mt-[112px]">
+      <div className="mb-10 md:mb-[107px]  mt-20 md:mt-[120px]">
         <div className="max-w-[1296px] mx-auto ">
           <Fade bottom>
             <div className="flex flex-col justify-center items-center ">
@@ -20,7 +20,7 @@ const Event = () => {
               </p>
             </div>
 
-            <div className="flex flex-col justify-center items-center px-5 md:px-0 md:flex-row gap-10 md:gap-4 flex-wrap mt-8 mb:mt-3 md:mt-[40px] ">
+            <div className="flex flex-col justify-center items-center px-5 md:px-0 md:flex-row gap-10 md:gap-4 flex-wrap mt-8 mb:mt-3 md:mt-[44px] ">
               {eventHome.map((img, i) => (
                 <div
                   key={i}

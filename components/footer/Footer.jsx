@@ -45,22 +45,27 @@ const Footer = () => {
         <div className="flex mx-3 2xl:mx-0 mb-4 pl-8 pt-5 md:pl-0 md:pt-0 md:items-center flex-col sm:flex-row justify-between ">
           <div className="cursor-pointer md:-bottom-2 relative">
             <Link href="/">
-              <Image src="/icon.png" height={36} width={110} alt="logo" />
+              <a>
+                <Image src="/icon.png" height={36} width={110} alt="logo" />
+              </a>
             </Link>
           </div>
           <div>
-            <ul className="flex flex-col  sm:flex-row gap-3 md:gap-7 items-start mb-4 md:mb-0 md:items-center text-lg text-[#B3B3B3] ">
+            <ul className="flex flex-col gap-4 sm:flex-row  items-start mb-4 md:mb-0 md:items-center text-lg text-[#B3B3B3] ">
               {[
                 ["/", "Home"],
                 ["/about", "About"],
                 ["/schedule", "Schedule"],
                 ["/page", "Page"],
               ].map(([url, title], index) => (
-                <span key={index}>
-                  <Link  href={url}>
-                    <li className="cursor-pointer">{title}</li>
+                <span
+                  key={index}
+                  className="flex gap-4 justify-center items-center"
+                >
+                  <Link href={url}>
+                    <li className="cursor-pointer font-semibold">{title}</li>
                   </Link>
-                  <GoPrimitiveDot className="hidden md:block last:hidden" />
+                  <GoPrimitiveDot className="hidden md:block " />
                 </span>
               ))}
             </ul>

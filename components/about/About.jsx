@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className="relative">
       <div className="mt-4 md:mt-0 xl:-mt-[77px] z-20  relative max-w-[1296px] mx-auto">
-        <div className="flex gap-5 px-2 md:px-14 mx-2 xl:mx-0   flex-wrap  bg-white justify-around  md:my-0 rounded-none md:rounded-lg shadow-lg py-10 z-10 ">
+        <div className="flex gap-10 md:gap-5 px-2 md:px-14 mx-2 xl:mx-0   flex-wrap  bg-white justify-around  md:my-0 rounded-none md:rounded-lg shadow-lg py-10 z-10 ">
           {bannerStates.map((item, i) => (
             <div
               className="flex w-[120px] md:w-auto flex-col items-center"
@@ -20,7 +20,7 @@ const About = () => {
               <h1
                 className={`text-[#5A00CC] ${
                   i == 0 ? "font-bold " : "font-semibold"
-                } text-3xl md:text-[43px] `}
+                } text-3xl md:text-[43px] mb-2 `}
               >
                 <CountUp end={item.number} />
                 <span className="primary-color">+</span>
@@ -104,7 +104,7 @@ const About = () => {
           alt="shape"
         />
       </div>
-      <div className="hidden animate-bounce lg:block absolute right-0 top-40">
+      <div className="hidden  lg:block absolute right-0 top-40">
         <Image
           src="/image/about/about-circle.png"
           width={60}

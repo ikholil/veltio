@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Button from "../others/Button";
 import { Fade } from "react-reveal";
 import { Formik } from "formik";
 const ContactForm = () => {

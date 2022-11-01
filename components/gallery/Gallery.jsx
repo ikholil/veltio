@@ -30,37 +30,37 @@ const Gallery = () => {
   return (
     <div className="relative">
       {modal && (
-        <div className="fixed top-0 w-full h-full bg-gray-400 flex items-center justify-center z-50">
-          <div className="relative rounded-md">
+        <div onClick={()=> setModal(!modal)} className="fixed top-0 w-full h-full bg-gray-400 flex items-center justify-center z-50">
+          <div onClick={(e) => e.stopPropagation()} className="relative rounded-md">
             <Image
               height={800}
               width={1200}
-              className="rounded-md"
+              className={`rounded-md `}
               src={tempImg?.img}
               alt="modal"
             />
             <button
-              className="absolute top-2 hover:bg-red-500 hover:text-white transition-colors duration-300 right-2 p-2 bg-white rounded-full "
+              className="absolute top-2 hover:bg-red-600 hover:text-white transition-colors duration-300 right-2 p-2 bg-white rounded-full "
               onClick={() => setModal(false)}
             >
               <MdClose />
             </button>
             <button
               onClick={handleLeft}
-              className="absolute hover:bg-blue-500 hover:text-white transition-colors duration-300 p-2 bg-white rounded-full top-[50%] left-2 "
+              className="absolute hover:bg-[#5A00CC] hover:text-white transition-colors duration-300 p-2 bg-white rounded-full top-[50%] left-2 "
             >
               <BsChevronLeft />
             </button>
             <button
               onClick={handleRight}
-              className="absolute hover:bg-blue-500 hover:text-white transition-colors duration-300 p-2 bg-white rounded-full top-[50%] right-2"
+              className="absolute hover:bg-[#5A00CC] hover:text-white transition-colors duration-300 p-2 bg-white rounded-full top-[50%] right-2"
             >
               <BsChevronRight />
             </button>
           </div>
         </div>
       )}
-      <div className="absolute -z-10 top-5 -right-1">
+      <div className="absolute animate-pulse -z-10 top-5 -right-1">
         <Image
           src="/image/gallery/bg-dots-home.png"
           height={260}
