@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { Formik } from "formik";
 const ContactForm = () => {
   return (
     <div className="relative">
-      <div className=" ">
+      <div>
         <div className="absolute top-40 left-20">
           <Image
             src="/image/contact/form-bg-dots.png"
@@ -16,11 +16,11 @@ const ContactForm = () => {
         </div>
         <div className="bg-[url('/image/contact/form-bg.png')] bg-no-repeat opacity-10 min-h-[1050px] w-full absolute top-0 flex items-center justify-center bg-cover"></div>
         <Fade bottom>
-          <div className="  max-w-[1296px] mx-3 md:mx-auto h-full z-10 relative">
-            <h2 className="text-center text-3xl pt-14 md:pt-[120px] md:text-[57px] font-bold mb-6 md:mb-10">
+          <div className="  max-w-[1296px] mx-3 md:mx-auto h-full pt-14 md:pt-[125px] z-10 relative">
+            <h2 className="text-center text-3xl  md:text-[57px] font-bold mb-6 md:mb-10">
               Send <span className="text-[#F112A2]">Message</span>
             </h2>
-            <p className="text-[#444] text-lg px-2 text-center mb-8 md:mb-14">
+            <p className="text-[#444] text-lg px-2 text-center mb-8 md:mb-12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div className="w-full md:w-[635px] mx-auto">
@@ -125,7 +125,7 @@ const ContactForm = () => {
                     </span>
 
                     <div className="flex justify-center mt-[50px] mb-16 md:mb-[120px]">
-                      <button className="bg-[#F112A2] px-12 py-6 rounded-lg text-white" type="submit">
+                      <button className="bg-[#F112A2] font-semibold px-12 py-4 rounded-lg text-white" type="submit">
                         Contact Us
                       </button>
                     </div>

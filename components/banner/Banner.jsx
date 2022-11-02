@@ -2,13 +2,13 @@ import Image from "next/image";
 import React from "react";
 import bannerImg from "../../public/image/banner/banner.png";
 import { GoPrimitiveDot } from "react-icons/go";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Banner = () => {
   return (
     <div>
       <div className="bg-[url('/image/banner/banner-bg.png')] bg-no-repeat bg-cover banner-bg w-full lg:h-full  relative">
-        <Fade bottom>
+        <Fade>
           <div className="hidden md:block absolute -bottom-2 z-10 right-0">
             <Image
               src="/image/banner/banner-shape2.png"
@@ -19,18 +19,18 @@ const Banner = () => {
           </div>
         </Fade>
 
-        <div className="max-w-[1296px] mx-auto z-20 flex flex-col md:flex-row xl:min-h-[900px] h-full lg:pt-10 items-center ">
+        <div className="max-w-[1296px] mx-auto z-20 flex flex-col md:flex-row xl:min-h-[870px] h-full items-center ">
           <Fade bottom>
-            <div className="z-10 pt-32  xl:pt-0 px-4 xl:px-0">
-              <p className="text-white text-lg md:text-2xl font-semibold mb-2 ">
+            <div className="z-10 pt-28  xl:pt-0 px-4 xl:px-0">
+              <p className="text-white text-lg md:text-2xl font-semibold mb-1 ">
                 Professional
               </p>
               <h1 className="font-bold leading-tight text-white text-4xl lg:text-[76px]">
                 Global <span className="primary-color">Business</span>{" "}
                 Conference
               </h1>
-              <ul className="mt-5 text-base md:text-2xl">
-                <li className=" flex mb-1 md:mb-4 items-center gap-3 text-white">
+              <ul className="mt-3 text-base md:text-2xl">
+                <li className=" flex mb-1 md:mb-5 items-center gap-3 text-white">
                   {" "}
                   <GoPrimitiveDot className="text-[#F112A2]" /> 25-28 July 2022
                 </li>
@@ -40,7 +40,7 @@ const Banner = () => {
                   California
                 </li>
               </ul>
-              <button className="px-8 md:px-14 mt-8 py-2 md:py-4 lg:mb-0 hover:bg-[#F112A2] hover:text-white  transition-all duration-300 rounded-md bg-white primary-color font-bold">
+              <button className="px-8 md:px-14 mt-[35px] py-2 md:py-4 lg:mb-0 hover:bg-[#F112A2] hover:text-white  transition-all duration-300 rounded-md bg-white primary-color font-bold">
                 Get Ticket
               </button>
             </div>
@@ -48,7 +48,7 @@ const Banner = () => {
 
           <Fade delay={500} bottom>
             <div className=" z-10 h-[70%] md:pt-20 -bottom-2  relative">
-              <Image src={bannerImg} className="" alt="bannger image" />
+              <Image src={bannerImg}  alt="bannger image" />
             </div>
           </Fade>
         </div>

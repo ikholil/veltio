@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { eventHome } from "../../data/eventhome";
 
 const Event = () => {
@@ -14,7 +14,7 @@ const Event = () => {
                 Our Event <span className="text-[#5A00CC]">Partner</span>
               </h2>
 
-              <p className="md:max-w-md text-center mt-6 text-lg mx-3 z-10 md:text-lg">
+              <p className="md:max-w-md text-center mt-[23px] text-lg mx-3 z-10 md:text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Fermentum urna sed erat tortor aliquam ipsum
               </p>

@@ -1,31 +1,31 @@
 import React from "react";
 import { pricing } from "../../data/price";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 const Pricing = () => {
   return (
     <div>
-      <div className="bg-[url('/image/pricing/bg.png')] bg-no-repeat bg-cover min-h-[850px] relative flex items-center justify-center">
+      <div className="bg-[url('/image/pricing/bg.png')] bg-no-repeat bg-cover">
      
       <Fade bottom>
-      <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto mb-20 md:mb-[120px]">
-        <h2 className="text-white  font-bold mt-14 md:mt-[120px] text-3xl md:text-[57px]">
+      <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto py-20 md:pt-[127px] pb-[120px]">
+        <h2 className="text-white  font-bold  text-3xl md:text-[57px]">
           Get Your Ticket
         </h2>
         <p className="md:max-w-lg  mx-3  mb-14 text-white text-center mt-5 text-sm md:text-lg md:mt-[28px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum urna sed erat tortor aliquam ipsum
         </p>
-        <div className="flex flex-col max-w-full px-3 xl:px-0 items-stretch justify-center flex-wrap lg:flex-row gap-6">
+        <div className=" card-container  max-w-full px-3 xl:px-0  justify-center   gap-6">
             {
               pricing.map((item,i) => (
-                <div className="bg-white pricing-card w-[300px] sm:w-[417px] rounded-lg " key={item.title}>
+                <div className="bg-white pricing-card w-[300px] lg:w-[417px] rounded-lg " key={item.title}>
                   <div className="flex flex-col justify-between">
-                    <div className={`${i == 1 && 'bg-[#F112A2] text-white'} pt-10 md:pt-24 rounded-t-lg`}>
-                    <h1 className={`text-center font-extrabold text-2xl md:text-[57px] mb-3 md:mb-7 ${i == 1 ? 'bg-[#F112A2] text-white':'primary-color'}`}>${item.price}</h1>
-                    <h3 className={`text-lg md:text-3xl text-center font-extrabold mb-4 md:mb-10 ${i == 1?'text-white':'text-[#222]'}`}>{item.title}</h3>
+                    <div className={`${i == 1 && 'bg-[#F112A2] text-white'} pt-10 md:pt-[69px] rounded-t-lg`}>
+                    <h1 className={`text-center font-extrabold text-2xl md:text-[57px] mb-3 md:mb-[34px] ${i == 1 ? 'bg-[#F112A2] text-white':'primary-color'}`}>${item.price}</h1>
+                    <h3 className={`text-lg md:text-3xl text-center font-extrabold mb-4 md:mb-8 ${i == 1?'text-white':'text-[#222]'}`}>{item.title}</h3>
                     </div>
                     {i !== 1 && <div className="w-28 h-1 mx-auto bg-[#5A00CC]"></div>}
-                   <div className="px-10 py-5 md:py-14">
-                   <ul className="flex flex-col gap-2 md:gap-4 items-center my-8">
+                   <div className="px-10 pb-[60px]">
+                   <ul className="flex flex-1 flex-col gap-2  items-center mt-[34px] mb-9">
                      {
                       item.features.map(feature => (
                         <li className="text-[#222] text-lg  " key={feature}>{feature}</li>

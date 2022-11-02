@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-reveal";
+import {Fade } from 'react-awesome-reveal'
 import { bannerStates } from "../../data/bannerstate";
 import CountUp from "react-countup";
 import img3 from "../../public/image/about/image3.png";

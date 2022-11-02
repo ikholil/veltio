@@ -1,14 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import Tab from "./Tab";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 const Conference = () => {
   return (
     <div>
       <div className="relative">
         <div className="max-w-[1296px] bg-[url('/image/conference/bg.png')] bg-conference flex flex-col  items-center mx-auto">
           <Fade bottom>
-            <h2 className="text-4xl md:text-[57px] font-bold text-center mt-14 md:mt-[120px]">
+            <h2 className="text-4xl md:text-[57px] font-bold text-center mt-14 md:mt-[123px]">
               Conference <span className="text-[#5A00CC]">Schedule</span>
             </h2>
             <p className="md:max-w-md text-center text-lg mx-3 md:text-lg  mt-[22px]">

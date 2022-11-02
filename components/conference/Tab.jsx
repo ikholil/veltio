@@ -18,11 +18,11 @@ const Tab = () => {
             className={`text-center md:w-[196px]  p-2 px-3 md:px-10 md:py-8 cursor-pointer rounded-md shadow-lg ${
               currentTab == speaker.id ? "bg-[#5A00CC]" : 'bg-white'
             }`}
-            disabled={currentTab === `${speaker.id}`}
+           
             onClick={() => handleTabClick(speaker.id)}
           >
-            <h4 className={`text-lg md:text-2xl font-bold mb-2 ${currentTab === speaker.id? 'text-white': 'text-[#5A00CC]'}`}>{speaker.day}</h4>
-            <p className={`text-sm md:text-lg ${currentTab === speaker.id? 'text-white': 'text-black'}`}>{speaker.date}</p>
+            <h4 className={`text-lg md:text-2xl font-bold mb-2 select-none ${currentTab === speaker.id? 'text-white': 'text-[#5A00CC]'}`}>{speaker.day}</h4>
+            <p className={`text-sm md:text-lg select-none ${currentTab === speaker.id? 'text-white': 'text-black'}`}>{speaker.date}</p>
           </div>
         ))}
       </div>

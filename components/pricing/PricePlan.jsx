@@ -1,13 +1,13 @@
 import React from "react";
 import { pricing } from "../../data/price";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 const Pricing = () => {
   return (
     <div>
       <div className="bg-[url('/image/pricing/pricing-bg-dots.png')] min-h-[850px] bg-no-repeat top-4 left-2 relative flex items-center justify-center">
      
       <Fade bottom>
-      <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto mb-20 md:mb-28">
+      <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto mb-20 md:mb-[135px]">
         <h2 className="  font-bold mt-8 md:mt-[112px] text-2xl md:text-[57px]">
           Get Your <span className="text-[#5A00CC]">Ticket</span> 
         </h2>

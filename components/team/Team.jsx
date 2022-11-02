@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import { speakers } from "../../data/speakers";
 import Social from "../others/Social";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const Team = () => {
   const router = useRouter();
@@ -13,9 +13,9 @@ const Team = () => {
   return (
     <div>
       <div className="bg-[url('/image/team/team-bg.png')] bg-no-repeat bg-cover relative flex items-center justify-center">
-        <Fade bottom>
-          <div className="py-[80px] md:py-[120px] max-w-[1296px] mx-auto z-10">
-            <h2 className="text-center mx-5 text-3xl lg:text-[57px] text-white font-bold mb-[39px]">
+        <Fade>
+          <div className="py-[80px] md:pt-[123px] md:pb-[120px] max-w-[1296px] mx-auto z-10">
+            <h2 className="text-center mx-5 text-3xl lg:text-[57px] text-white font-bold mb-[41px]">
               Meet Our Event Speakers
             </h2>
             <p className="text-white text-base md:text-lg px-2 text-center mb-8 md:mb-[37px]">

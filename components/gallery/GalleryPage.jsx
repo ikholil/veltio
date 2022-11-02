@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Fade } from "react-reveal";
+import { Fade } from "react-awesome-reveal";
 import { MdClose } from "react-icons/md";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { galleryPageImg } from "../../data/gallaryPageImg";
