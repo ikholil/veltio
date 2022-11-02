@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Fade } from "react-awesome-reveal";
 import { MdClose } from "react-icons/md";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import { galleryPageImg } from "../../data/gallaryPageImg";
@@ -31,10 +30,7 @@ const GalleryPage = () => {
     <div className="relative">
       {modal && (
         <div onClick={()=> setModal(!modal)} className="fixed top-0 w-screen h-full bg-gray-400 flex items-center justify-center z-50">
-          {/* <div
-            className="absolute top-0 left-0 bg-green-300 w-screen h-full"
-            onClick={() => setModal(!modal)}
-          ></div> */}
+         
           <div onClick={(e) => e.stopPropagation()} className="relative rounded-md">
             <Image
               height={800}
@@ -73,7 +69,7 @@ const GalleryPage = () => {
         />
       </div>
       <div className="max-w-[1296px] mx-auto">
-        <Fade right>
+
           <div className="text-center">
             <h2 className="text-center font-extrabold mt-16 md:mt-[120px] mb-10 text-4xl md:text-[57px]">
               Our <span className="text-[#5A00CC]">Gallery</span>
@@ -82,7 +78,7 @@ const GalleryPage = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-        </Fade>
+
 
         <div className="grid mx-2 xl:mx-0 grid-cols-12 mb-[50px]  gap-4">
           {galleryPageImg.map((item) => (
@@ -105,33 +101,7 @@ const GalleryPage = () => {
             </div>
           ))}
 
-          {/* <div className="col-span-12 md:col-span-4 ">
-                <Image className="zoom" src='/image/gallery/img1.png' width={432} height={407} alt="gallery photos" />
-            </div>
-            <div className="col-span-12 row-span-2 md:col-span-4">
-                <Image className="zoom" src='/image/gallery/img2.png' width={418} height={821} alt="gallery photos" />
-            </div>
-            <div className="col-span-12 md:col-span-4">
-                <Image className="zoom" src='/image/gallery/img3.png' width={432} height={407} alt="gallery photos" />
-            </div>
-            <div className="col-span-12 md:col-span-4">
-                <Image className="zoom" src='/image/gallery/img4.png' width={432} height={407} alt="gallery photos" />
-            </div>
-            <div className="col-span-12 md:col-span-4">
-                <Image className="zoom" src='/image/gallery/img5.png' width={432} height={407} alt="gallery photos" />
-            </div>
-            <div className="col-span-12 md:col-span-4">
-                <Image className="zoom" src='/image/gallery/img6.png' width={432} height={407} alt="gallery photos" />
-            </div>
-            <div className="col-span-12 md:col-span-4">
-                <Image className="zoom" src='/image/gallery/img7.png' width={432} height={407} alt="gallery photos" />
-            </div>
-            <div className="col-span-12 row-span-2 md:col-span-4">
-                <Image className="zoom" src='/image/gallery/img8.png' width={418} height={822} alt="gallery photos" />
-            </div>
-            <div className="col-span-12 md:col-span-8">
-                <Image className="zoom" src='/image/gallery/img9.png' width={864} height={407} alt="gallery photos" />
-            </div> */}
+        
         </div>
 
         <div className="flex justify-center mb-10 md:mb-[120px] gap-2">

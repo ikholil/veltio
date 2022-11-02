@@ -13,10 +13,10 @@ const Pricing = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
             urna sed erat tortor aliquam ipsum
           </p>
-          <div className="flex flex-col px-2 xl:px-0 items-stretch justify-center flex-wrap lg:flex-row gap-6">
+          <div className="flex flex-col px-2 xl:px-0 items-stretch justify-center flex-wrap lg:flex-row gap-5">
             {pricing.map((item, i) => (
               <div
-                className="bg-white pricing-card w-[295px] md:w-[417px] shadow-lg rounded-md "
+                className="bg-white w-[295px] md:w-[417px] shadow-lg rounded-md "
                 key={item.title}
               >
                 <div className="flex flex-col justify-between">
