@@ -25,10 +25,10 @@ const Statics = () => {
                 </div>
                 <div className="w-[1px] h-full bg-[#5A00CC]"></div>
                 <div>
-                  <h2 className="text primary-color font-bold text-2xl md:text-[43px]">
+                  <h2 className="text primary-color font-bold text-xl md:text-[43px]">
                     <CountUp end={stat.number} />
                   </h2>
-                  <p className="text-base md:text-lg text-[#222222]">
+                  <p className="text-sm md:text-lg text-[#222222]">
                     {stat.title}
                   </p>
                 </div>

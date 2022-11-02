@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div className="relative">
       <div className="mt-4 md:mt-0 xl:-mt-[77px] z-20  relative max-w-[1296px] mx-auto">
-        <div className="flex gap-10 md:gap-5 px-2 md:px-14 mx-2 xl:mx-0   flex-wrap  bg-white justify-around  md:my-0 rounded-none md:rounded-lg shadow-lg py-10 z-10 ">
+        <div className="flex gap-y-10 md:gap-5 px-2 md:px-14 mx-2 xl:mx-0   flex-wrap  bg-white justify-around  md:my-0 rounded-none md:rounded-lg shadow-lg py-10 z-10 ">
           {bannerStates.map((item, i) => (
             <div
               className="flex w-[120px] md:w-auto flex-col items-center"
@@ -79,13 +79,13 @@ const About = () => {
                 Fermentum urna sed erat tortor aliquam ipsum auctor ut.
                 Consectetur non, platea id porttitor.
               </p>
-              <div className="mb-14 md:mb-5">
-                <button className="relative rounded px-5 py-2 md:px-10  md:py-3 overflow-hidden group bg-[#5A00CC] mr-2 hover:bg-gradient-to-r hover:from-[#5A00CC] hover:to-[#5800ccc2] text-white  transition-all ease-out duration-300">
+              <div className="flex gap-3">
+                <button className="relative rounded px-4 py-2 md:px-10  md:py-2 overflow-hidden group bg-[#5A00CC] mr-2 hover:bg-gradient-to-r hover:from-[#5A00CC] hover:to-[#5800ccc2] text-white  transition-all ease-out duration-300">
                   <span className="absolute right-0 w-8 h-32 -mt-12 transition-all duration-1000 transform translate-x-12 bg-white opacity-10 rotate-12 group-hover:-translate-x-40 ease"></span>
                   <span className="relative">Get Ticket</span>
                 </button>
 
-                <button className="rounded-md px-5 py-2 md:px-[38px]  md:py-[10px] m-1 overflow-hidden relative group cursor-pointer border-2 font-medium border-indigo-600 text-indigo-600">
+                <button className="rounded-md px-4 py-2 md:px-10  md:py-3  overflow-hidden relative group cursor-pointer border-2 font-medium border-indigo-600 text-indigo-600">
                   <span className="absolute w-64 h-0 transition-all duration-500 origin-center rotate-45 -translate-x-20 bg-[#5A00CC] top-1/2 group-hover:h-64 group-hover:-translate-y-32 ease"></span>
                   <span className="relative text-indigo-600 transition duration-500 group-hover:text-white ease">
                     Learn More

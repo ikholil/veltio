@@ -6,7 +6,7 @@ import { eventHome } from "../../data/eventhome";
 const Event = () => {
   return (
     <div className="relative">
-      <div className="mb-10 md:mb-[107px]  mt-20 md:mt-[120px]">
+      <div className="mb-10 md:mb-[107px]  mt-16 md:mt-[120px]">
         <div className="max-w-[1296px] mx-auto ">
           <Fade bottom>
             <div className="flex flex-col justify-center items-center ">

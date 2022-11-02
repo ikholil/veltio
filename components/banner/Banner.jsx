@@ -22,10 +22,10 @@ const Banner = () => {
         <div className="max-w-[1296px] mx-auto z-20 flex flex-col md:flex-row xl:min-h-[870px] h-full items-center ">
           <Fade bottom>
             <div className="z-10 pt-28  xl:pt-0 px-4 xl:px-0">
-              <p className="text-white text-lg md:text-2xl font-semibold mb-1 ">
+              <p className="text-white text-lg md:text-2xl font-semibold mb-2 xl:mb-1 ">
                 Professional
               </p>
-              <h1 className="font-bold leading-tight text-white text-4xl lg:text-[76px]">
+              <h1 className="font-bold leading-tight text-white text-4xl lg:text-6xl xl:text-[76px]">
                 Global <span className="primary-color">Business</span>{" "}
                 Conference
               </h1>
