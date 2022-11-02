@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { aboutBusiness } from "../../data/aboutBusiness";
 import AboutImg from '../../public/image/about/about-page-img.png'
+import AboutShape from '../../public/image/about/about-page-shape.png'
 aboutBusiness;
 const GlobalBusiness = () => {
   return (
@@ -19,7 +20,7 @@ const GlobalBusiness = () => {
             </div>
             <div className="absolute hidden lg:block md:-top-[217px] -left-[100px]">
               <Image
-                src="/image/about/about-page-shape.png"
+                src={AboutShape}
                 height={300}
                 width={200}
                 alt="about page image"

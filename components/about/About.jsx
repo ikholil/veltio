@@ -5,6 +5,9 @@ import CountUp from "react-countup";
 import img3 from "../../public/image/about/image3.png";
 import img1 from "../../public/image/about/image1.png";
 import img2 from "../../public/image/about/image2.png";
+import rectangle from '../../public/image/about/rectangle.png'
+import aboutShape from '../../public/image/about/about-shape.png'
+import aboutCircle from '../../public/image/about/about-circle.png'
 bannerStates;
 const About = () => {
   return (
@@ -39,7 +42,7 @@ const About = () => {
               <Image
                 width={113}
                 height={124}
-                src="/image/about/rectangle.png"
+                src={rectangle}
                 alt="about image"
               />
             </div>
@@ -94,7 +97,7 @@ const About = () => {
       </div>
       <div className="hidden  xl:block absolute bottom-0 left-0">
         <Image
-          src="/image/about/about-shape.png"
+          src={aboutShape}
           width={180}
           height={350}
           alt="shape"
@@ -102,7 +105,7 @@ const About = () => {
       </div>
       <div className="hidden  lg:block absolute right-0 top-40">
         <Image
-          src="/image/about/about-circle.png"
+          src={aboutCircle}
           width={60}
           height={80}
           alt="shape"

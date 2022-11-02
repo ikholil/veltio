@@ -1,12 +1,13 @@
 import Image from "next/image";
 import React from "react";
 import { contactInfo } from "../../data/contactInfo";
+import ContactBg from '../../public/image/contact/contact-info-bg.png'
 const ContactInfo = () => {
   return (
     <div className="relative">
       <div className="absolute top-0 right-10">
         <Image
-          src="/image/contact/contact-info-bg.png"
+          src={ContactBg}
           height={480}
           width={1600}
           alt="bg dots"

@@ -13,7 +13,7 @@ const ContactForm = () => {
             alt="bg dots"
           />
         </div>
-        <div className="bg-[url('/image/contact/form-bg.png')] bg-no-repeat opacity-10 min-h-[1050px] w-full absolute top-0 flex items-center justify-center bg-cover"></div>
+        <div className="bg-[url('/image/contact/form-bg.png')] bg-no-repeat opacity-10 h-full w-full absolute top-0 flex items-center justify-center bg-cover"></div>
     
           <div className="  max-w-[1296px] mx-3 md:mx-auto h-full pt-14 md:pt-[125px] z-10 relative">
             <h2 className="text-center text-3xl  md:text-[57px] font-bold mb-6 md:mb-10">

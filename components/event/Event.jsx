@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { eventHome } from "../../data/eventhome";
+import EventShape from '../../public/image/event/event-shape.png'
+import EventShape2 from '../../public/image/event/event-shape2.png'
 
 const Event = () => {
   return (
@@ -33,7 +35,7 @@ const Event = () => {
         </div>
         <div className="absolute hidden xl:block -z-10 top-10 left-24">
           <Image
-            src="/image/event/event-shape.png"
+            src={EventShape}
             height={260}
             width={138}
             alt="shape"
@@ -41,7 +43,7 @@ const Event = () => {
         </div>
         <div className="hidden xl:block absolute  -z-10 -top-24 right-0">
           <Image
-            src="/image/event/event-shape2.png"
+            src={EventShape2}
             height={400}
             width={150}
             alt="shape"

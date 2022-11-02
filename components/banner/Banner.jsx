@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import bannerImg from "../../public/image/banner/banner.png";
+import bannerShape2 from "../../public/image/banner/banner-shape2.png";
+import circleBanner from "../../public/image/banner/circle-banner.png";
 import { GoPrimitiveDot } from "react-icons/go";
 
 const Banner = () => {
@@ -9,7 +11,7 @@ const Banner = () => {
       <div className="bg-[url('/image/banner/banner-bg.png')] bg-no-repeat bg-cover banner-bg w-full lg:h-full  relative">
         <div className="hidden md:block absolute -bottom-2 z-10 right-0">
           <Image
-            src="/image/banner/banner-shape2.png"
+            src={bannerShape2}
             width={800}
             height={1100}
             alt="shape"
@@ -47,7 +49,7 @@ const Banner = () => {
 
         <div className="absolute  duration-1000 hidden xl:block top-36">
           <Image
-            src="/image/banner/circle-banner.png"
+            src={circleBanner}
             width={60}
             height={80}
             alt="shape"

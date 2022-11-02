@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Tab from "./Tab";
+import conShape from '../../public/image/conference/conference-shape.png'
 const Conference = () => {
   return (
     <div>
@@ -20,7 +21,7 @@ const Conference = () => {
         </div>
         <div className="absolute hidden xl:block top-0 -z-10 left-0">
           <Image
-            src="/image/conference/conference-shape.png"
+            src={conShape}
             height={550}
             width={380}
             alt="shape"
