@@ -1,13 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import { Formik } from "formik";
+import formDots from '../../public/image/contact/form-bg-dots.png'
 const ContactForm = () => {
   return (
     <div className="relative">
       <div>
         <div className="absolute top-40 left-20">
           <Image
-            src="/image/contact/form-bg-dots.png"
+            src={formDots}
             width={200}
             height={400}
             alt="bg dots"
@@ -123,7 +124,7 @@ const ContactForm = () => {
                       {errors.message && touched.message && errors.message}
                     </span>
 
-                    <div className="flex justify-center mt-6 md:mt-[50px] mb-16 md:mb-[120px]">
+                    <div className="flex justify-center mt-6 md:mt-[50px] pb-16 md:pb-[120px]">
                       <button className="bg-[#F112A2] font-semibold px-12 py-4 rounded-lg text-white" type="submit">
                         Contact Us
                       </button>
