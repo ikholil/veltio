@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-awesome-reveal";
 import { Formik } from "formik";
 const ContactForm = () => {
   return (
@@ -15,7 +14,7 @@ const ContactForm = () => {
           />
         </div>
         <div className="bg-[url('/image/contact/form-bg.png')] bg-no-repeat opacity-10 min-h-[1050px] w-full absolute top-0 flex items-center justify-center bg-cover"></div>
-        <Fade bottom>
+    
           <div className="  max-w-[1296px] mx-3 md:mx-auto h-full pt-14 md:pt-[125px] z-10 relative">
             <h2 className="text-center text-3xl  md:text-[57px] font-bold mb-6 md:mb-10">
               Send <span className="text-[#F112A2]">Message</span>
@@ -134,7 +133,7 @@ const ContactForm = () => {
               </Formik>
             </div>
           </div>
-        </Fade>
+
       </div>
     </div>
   );

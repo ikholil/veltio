@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-awesome-reveal";
 import { eventHome } from "../../data/eventhome";
 
 const Event = () => {
@@ -8,7 +7,7 @@ const Event = () => {
     <div className="relative">
       <div className="mb-10 md:mb-[107px]  mt-16 md:mt-[120px]">
         <div className="max-w-[1296px] mx-auto ">
-          <Fade bottom>
+      
             <div className="flex flex-col justify-center items-center ">
               <h2 className="text-4xl md:text-[57px] font-bold text-center">
                 Our Event <span className="text-[#5A00CC]">Partner</span>
@@ -30,7 +29,7 @@ const Event = () => {
                 </div>
               ))}
             </div>
-          </Fade>
+     
         </div>
         <div className="absolute hidden xl:block -z-10 top-10 left-24">
           <Image

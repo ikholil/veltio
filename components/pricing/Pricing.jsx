@@ -1,12 +1,12 @@
 import React from "react";
 import { pricing } from "../../data/price";
-import { Fade } from "react-awesome-reveal";
+
 const Pricing = () => {
   return (
     <div>
       <div className="bg-[url('/image/pricing/bg.png')] bg-no-repeat bg-cover">
      
-      <Fade bottom>
+
       <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto py-20 md:pt-[127px] pb-[120px]">
         <h2 className="text-white  font-bold  text-3xl md:text-[57px]">
           Get Your Ticket
@@ -14,10 +14,10 @@ const Pricing = () => {
         <p className="md:max-w-lg  mx-3  mb-14 text-white text-center mt-5 text-sm md:text-lg md:mt-[28px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum urna sed erat tortor aliquam ipsum
         </p>
-        <div className=" card-container  max-w-full px-3 xl:px-0  justify-center   gap-6">
+        <div className="flex flex-wrap max-w-full px-3 xl:px-0 justify-center   gap-5">
             {
               pricing.map((item,i) => (
-                <div className="bg-white pricing-card w-[300px] lg:w-[417px] rounded-lg " key={item.title}>
+                <div className=" bg-white w-[300px] lg:w-[417px] rounded-lg " key={item.title}>
                   <div className="flex flex-col justify-between">
                     <div className={`${i == 1 && 'bg-[#F112A2] text-white'} pt-10 md:pt-[69px] rounded-t-lg`}>
                     <h1 className={`text-center font-extrabold text-2xl md:text-[57px] mb-3 md:mb-[34px] ${i == 1 ? 'bg-[#F112A2] text-white':'primary-color'}`}>${item.price}</h1>
@@ -43,7 +43,7 @@ const Pricing = () => {
             }
         </div>
       </div>
-      </Fade>
+
     </div>
     </div>
   );

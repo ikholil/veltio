@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { Fade } from "react-awesome-reveal";
 import { aboutBusiness } from "../../data/aboutBusiness";
 import AboutImg from '../../public/image/about/about-page-img.png'
 aboutBusiness;

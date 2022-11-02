@@ -37,12 +37,7 @@ body{
   background-size: 100%;
  background-repeat: no-repeat;
 }
-.pricing-card{
-  flex-grow: 1;
-  flex-basis: 0;
-  min-width: 0;
-  flex: 1
-}
+
 .navbar{
   border-bottom: 1px solid #8243D1;
 }
@@ -55,7 +50,3 @@ body{
   flex-direction: column;
 }
 
-.card-container{
-  display: flex;
-  flex-wrap: wrap;
-}

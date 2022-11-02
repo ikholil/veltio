@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
-import { Fade } from "react-awesome-reveal";
 import { speakers } from "../../data/speakers";
 import Social from "../others/Social";
 
@@ -13,7 +12,7 @@ const Team = () => {
   return (
     <div className="relative">
       <div className="bg-[url('/image/team/allteam-bg-dot.png')] bg-no-repeat bg-cover h-full w-screen absolute"></div>
-      <Fade>
+
       <div className="my-20 md:my-[120px]   max-w-[1296px] mx-auto z-10">
         <h2 className="text-center text-3xl md:text-[57px]  font-bold mb-[30px]">
           Meet Our Event <span className="text-[#F112A2]"> Speakers</span>
@@ -49,8 +48,6 @@ const Team = () => {
           ))}
         </div>
       </div>
-      </Fade>
-     
     </div>
   );
 };

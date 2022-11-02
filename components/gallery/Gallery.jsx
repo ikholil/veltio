@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { galleryImages } from "../../data/galleryImage";
 import { MdClose } from "react-icons/md";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import { Fade } from "react-awesome-reveal";
 const Gallery = () => {
   const [modal, setModal] = useState(false);
   const [tempImg, setTempImg] = useState({});
@@ -68,7 +67,7 @@ const Gallery = () => {
           alt="shape"
         />
       </div>
-      <Fade bottom>
+
         <div className="max-w-[1296px] mx-auto mb-16 md:mb-[120px] ">
           <h2 className="text-4xl md:text-[57px] font-extrabold text-center mb-[37px] mt-16 md:mt-[122px]">
             Our <span className="text-[#5A00CC]">Gallery</span>
@@ -94,7 +93,7 @@ const Gallery = () => {
             ))}
           </div>
         </div>
-      </Fade>
+   
     </div>
   );
 };

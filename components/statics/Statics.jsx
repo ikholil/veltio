@@ -1,11 +1,10 @@
 import Image from "next/image";
 import CountUp from "react-countup";
-import { Fade } from "react-awesome-reveal";
 import { statics } from "../../data/statics";
 const Statics = () => {
   return (
     <div className="bg-[url('/image/statics/statics-bg.png')] w-screen statics-bg">
-      <Fade bottom>
+
         <div className="flex flex-col max-w-[1296px]  mx-auto items-center justify-center">
           <h1 className="text-2xl mt-16 md:mt-[110px] leading-tight mb-4 md:mb-[7px] font-bold md:text-[57px] text-center">
             Our Present <span className="primary-color">Statics</span>
@@ -36,7 +35,6 @@ const Statics = () => {
             ))}
           </div>
         </div>
-      </Fade>
     </div>
   );
 };

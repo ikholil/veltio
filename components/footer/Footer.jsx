@@ -1,13 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Fade } from "react-awesome-reveal";
 import { GoPrimitiveDot } from "react-icons/go";
 import Social from "../others/Social";
 const Footer = () => {
   return (
     <div className="relative  bg-[#0D0635]">
-      <Fade>
       <div className=" max-w-[1296px]  mx-auto  min-h-[350px]">
         <div className="absolute top-3 animate-pulse">
           <Image
@@ -61,17 +59,14 @@ const Footer = () => {
                 ["/schedule", "Schedule"],
                 ["/page", "Page"],
               ].map(([url, title], index) => (
-                <span
-                  key={index}
-                  className="flex gap-4 justify-center items-center"
-                >
-                  <Link href={url}>
-                    <a>
-                      <li className="cursor-pointer font-semibold">{title}</li>
-                    </a>
-                  </Link>
-                  <GoPrimitiveDot className="hidden md:block " />
-                </span>
+              
+                <Link key={title} href={url}>
+                  <a className="flex gap-4 justify-center items-center">
+                    <li className="cursor-pointer font-semibold">{title}</li>
+                    <GoPrimitiveDot className="hidden md:block " />
+                  </a>
+                </Link>
+            
               ))}
             </ul>
           </div>
@@ -84,8 +79,6 @@ const Footer = () => {
           <Social classes="text-white" size={45} />
         </div>
       </div>
-      </Fade>
-     
     </div>
   );
 };
