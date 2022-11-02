@@ -91,9 +91,9 @@ const Header = () => {
                 </span>
               </span>
             </li>
-            <span className=" md:hidden mt-2">
+            <li className=" md:hidden mt-2">
               <Button name="Book Ticket" classes="primary-color bg-white" />
-            </span>
+            </li>
           </ul>
         </div>
         <div className="hidden md:block">
