@@ -61,10 +61,10 @@ const Footer = () => {
               ].map(([url, title], index) => (
               
                 <Link key={title} href={url}>
-                  <a className="flex gap-4 justify-center items-center">
-                    <li className="cursor-pointer font-semibold">{title}</li>
+                  <li className="flex gap-4 justify-center items-center">
+                    <a className="cursor-pointer font-semibold">{title}</a>
                     <GoPrimitiveDot className="hidden md:block " />
-                  </a>
+                  </li>
                 </Link>
             
               ))}

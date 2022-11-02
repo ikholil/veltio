@@ -12,7 +12,7 @@ import Review from '../components/review/Review'
 
 export default function Home() {
   return (
-    <div>
+    <>
      
       <Head>
         <title>Veltio</title>
@@ -29,6 +29,6 @@ export default function Home() {
       <Gallery />
       <Review />
 
-    </div>
+    </>
   );
 }

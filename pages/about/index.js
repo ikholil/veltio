@@ -5,10 +5,13 @@ import TopBanner from '../../components/banner/TopBanner';
 import Event from '../../components/event/Event';
 import Team from '../../components/team/Team';
 import Statics from '../../components/statics/Statics'
-import Footer from '../../components/footer/Footer'
+import Head from 'next/head';
 const About = () => {
     return (
-        <div>
+        <>
+        <Head>
+            <title>About</title>
+        </Head>
             <TopBanner text="About Us" indicator="About Us" />
             <GlobalBusiness />
             <Team />
@@ -16,7 +19,7 @@ const About = () => {
             <BookSeat />
             <Statics />
            
-        </div>
+        </>
     );
 };
 

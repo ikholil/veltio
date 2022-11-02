@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { speakers } from "../../data/speakers";
 import Social from "../others/Social";
+import Placeholder from '../../public/image/team/placeholder.jpg'
 const SpeakerDetails = () => {
   const [speaker, setSpeaker] = useState({});
   const { query } = useRouter();
@@ -20,7 +21,7 @@ const SpeakerDetails = () => {
           <div className="md:h-[250px] md:w-[250px] my-[25px] rounded-full border-4 border-[#F112A2]">
             <Image
               className="rounded-full "
-              src={speaker?.photo}
+              src={speaker?.photo ? speaker?.photo:Placeholder}
               height={250}
               width={250}
               alt="speaker image"
