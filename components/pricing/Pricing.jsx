@@ -17,7 +17,7 @@ const Pricing = () => {
         <div className="flex flex-wrap max-w-full px-3 xl:px-0 justify-center   gap-5">
             {
               pricing.map((item,i) => (
-                <div className=" bg-white w-[300px] lg:w-[417px] rounded-lg " key={item.title}>
+                <div className=" bg-white w-[300px] lg:w-[417px] shadow-[0px_4px_18px_rgba(148,148,148,0.25)] rounded-[10px]  " key={item.title}>
                   <div className="flex flex-col justify-between">
                     <div className={`${i == 1 && 'bg-[#F112A2] text-white'} pt-10 md:pt-[69px] rounded-t-lg`}>
                     <h1 className={`text-center font-extrabold text-2xl md:text-[57px] mb-3 md:mb-[34px] ${i == 1 ? 'bg-[#F112A2] text-white':'primary-color'}`}>${item.price}</h1>

@@ -39,20 +39,20 @@ const Gallery = () => {
               alt="modal"
             />
             <button
-              className="absolute top-2 hover:bg-red-600 hover:text-white transition-colors duration-300 right-2 p-2 bg-white rounded-full "
+              className="absolute top-2 pinkhover right-2 p-2 bg-white rounded-full "
               onClick={() => setModal(false)}
             >
               <MdClose />
             </button>
             <button
               onClick={handleLeft}
-              className="absolute hover:bg-[#5A00CC] hover:text-white transition-colors duration-300 p-2 bg-white rounded-full top-[50%] left-2 "
+              className="absolute  pinkhover p-2 bg-white rounded-full top-[50%] left-2 "
             >
               <BsChevronLeft />
             </button>
             <button
               onClick={handleRight}
-              className="absolute hover:bg-[#5A00CC] hover:text-white transition-colors duration-300 p-2 bg-white rounded-full top-[50%] right-2"
+              className="absolute  pinkhover p-2 bg-white rounded-full top-[50%] right-2"
             >
               <BsChevronRight />
             </button>

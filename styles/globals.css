@@ -16,8 +16,8 @@ body{
     .zoom{
       @apply hover:scale-150 transition-all duration-1000
     }
-    .bluehover{
-      @apply hover:bg-[#5A00CC] hover:text-white transition-colors duration-300
+    .pinkhover{
+      @apply hover:bg-[#F112A2] hover:text-white transition-colors duration-300
     }
   }
 .card:hover .card-inner{

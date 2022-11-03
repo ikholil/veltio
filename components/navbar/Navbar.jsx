@@ -97,7 +97,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="hidden md:block">
-          <Button name="Book Ticket" classes="primary-color bg-white" />
+          <Button name="Book Ticket" classes="primary-color hover:shadow-md bg-white" />
         </div>
         <button
           onClick={() => setOpen(!open)}

@@ -20,13 +20,13 @@ const Banner = () => {
 
         <div className="max-w-[1296px] mx-auto z-20 flex flex-col md:flex-row xl:min-h-[870px] h-full items-center ">
           <div className="z-10 pt-28  xl:pt-0 px-4 xl:px-0">
-            <p className="text-white text-lg md:text-2xl font-semibold mb-2 xl:mb-1 ">
+            <p className="text-white text-lg md:text-2xl font-semibold mb-2 xl:mb-4 ">
               Professional
             </p>
             <h1 className="font-bold leading-tight text-white text-4xl lg:text-6xl xl:text-[76px]">
               Global <span className="primary-color">Business</span> Conference
             </h1>
-            <ul className="mt-3 text-base md:text-2xl">
+            <ul className="mt-3 md:mt-6 text-base md:text-2xl">
               <li className=" flex mb-1 md:mb-5 items-center gap-3 text-white">
                 {" "}
                 <GoPrimitiveDot className="text-[#F112A2]" /> 25-28 July 2022

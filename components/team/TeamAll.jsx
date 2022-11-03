@@ -7,7 +7,7 @@ import Social from "../others/Social";
 const Team = () => {
   const router = useRouter();
   const handleClick = (id) => {
-    router.push(`/speaker/${id}`);
+    router.push(`/speakers/${id}`);
   };
   return (
     <div className="relative">

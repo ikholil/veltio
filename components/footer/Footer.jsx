@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div className="grid place-content-center  xl:px-0  w-full">
           <div className="w-auto sm:px-20 md:px-32 lg:px-48 lg:bg-[url('/image/footer/footer-shape.png')] bg-no-repeat bg-left  relative flex flex-col justify-center items-center bg-white px-4 rounded-md mt-20 mb-5 md:my-[120px] py-6 md:py-16 mx-2 md:mx-auto">
-            <div className="absolute rounded-md top-3  right-2 animate-pulse">
+            <div className="absolute hidden md:block rounded-md top-3  right-2 animate-pulse">
               <Image src={dots2} className="rounded-md" alt="footer shape" />
             </div>
             <h2 className="text-xl md:text-3xl font-bold mx-2 text-center mb-4 text-[#222]">
@@ -36,7 +36,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex mx-3 2xl:mx-0 mb-4 pl-8 pt-5 md:pl-0 md:pt-0 md:items-center flex-col sm:flex-row justify-between ">
-          <div className="cursor-pointer md:-bottom-2 relative">
+          <div className="cursor-pointer md:-bottom-2 mb-4 md:mb-0 relative">
             <Link href="/">
               <a>
                 <Image src="/icon.png" height={36} width={110} alt="logo" />

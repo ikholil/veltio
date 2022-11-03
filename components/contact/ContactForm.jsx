@@ -6,7 +6,7 @@ const ContactForm = () => {
   return (
     <div className="relative">
       <div>
-        <div className="absolute top-40 left-20">
+        <div className="absolute animate-pulse top-40 left-20">
           <Image
             src={formDots}
             width={200}
@@ -17,10 +17,10 @@ const ContactForm = () => {
         <div className="bg-[url('/image/contact/form-bg.png')] bg-no-repeat opacity-10 h-full w-full absolute top-0 flex items-center justify-center bg-cover"></div>
     
           <div className="  max-w-[1296px] mx-3 md:mx-auto h-full pt-14 md:pt-[125px] z-10 relative">
-            <h2 className="text-center text-3xl  md:text-[57px] font-bold mb-6 md:mb-10">
+            <h2 className="text-center text-3xl  md:text-[57px] font-bold mb-4 md:mb-10">
               Send <span className="text-[#F112A2]">Message</span>
             </h2>
-            <p className="text-[#444] text-lg px-2 text-center mb-8 md:mb-12">
+            <p className="text-[#444] text-lg px-2 text-center mb-7 md:mb-12">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
             <div className="w-full md:w-[635px] mx-auto">
@@ -78,7 +78,7 @@ const ContactForm = () => {
                       onBlur={handleBlur}
                       value={values.name}
                       placeholder="Full Name"
-                      className="p-5 w-full rounded-md mt-3 mb-1 focus:outline-none"
+                      className="p-5 w-full shadow-lg rounded-md mt-4 mb-1 focus:outline-none"
                     />
                     <span className="text-red-500">
                       {" "}
@@ -91,7 +91,7 @@ const ContactForm = () => {
                       onBlur={handleBlur}
                       value={values.email}
                       placeholder="Email"
-                      className="p-5 w-full rounded-md mt-3 mb-1 focus:outline-none"
+                      className="p-5 w-full shadow-lg rounded-md mt-4 mb-1 focus:outline-none"
                     />
                     <span className="text-red-500">
                       {" "}
@@ -104,7 +104,7 @@ const ContactForm = () => {
                       onBlur={handleBlur}
                       value={values.subject}
                       placeholder="Subject"
-                      className="p-5 w-full rounded-md mt-3 mb-1 focus:outline-none"
+                      className="p-5 w-full shadow-lg rounded-md mt-4 mb-1 focus:outline-none"
                     />
                     <span className="text-red-500">
                       {" "}
@@ -117,7 +117,7 @@ const ContactForm = () => {
                       onBlur={handleBlur}
                       value={values.message}
                       placeholder="Type a Message"
-                      className=" mt-3 mb-1 p-5 w-full rounded-md focus:outline-none"
+                      className=" mt-4 mb-1 p-5 w-full shadow-lg rounded-md focus:outline-none"
                     />
                     <span className="text-red-500">
                       {" "}

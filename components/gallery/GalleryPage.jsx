@@ -40,20 +40,20 @@ const GalleryPage = () => {
               alt="modal"
             />
             <button
-              className="absolute top-2 shadow-md hover:bg-red-600 hover:text-white transition-colors duration-300 right-2 p-2 bg-white rounded-full "
+              className="absolute top-2 shadow-md pinkhover right-2 p-2 bg-white rounded-full "
               onClick={() => setModal(false)}
             >
               <MdClose />
             </button>
             <button
               onClick={handleLeft}
-              className="absolute shadow-md bluehover p-2 bg-white rounded-full top-[50%] left-2 "
+              className="absolute shadow-md pinkhover p-2 bg-white rounded-full top-[50%] left-2 "
             >
               <BsChevronLeft />
             </button>
             <button
               onClick={handleRight}
-              className="absolute shadow-md bluehover p-2 bg-white rounded-full top-[50%] right-2"
+              className="absolute shadow-md pinkhover p-2 bg-white rounded-full top-[50%] right-2"
             >
               <BsChevronRight />
             </button>
@@ -71,7 +71,7 @@ const GalleryPage = () => {
       <div className="max-w-[1296px] mx-auto">
 
           <div className="text-center">
-            <h2 className="text-center font-extrabold mt-16 md:mt-[120px] mb-10 text-4xl md:text-[57px]">
+            <h2 className="text-center font-extrabold mt-16 md:mt-[120px] mb-3 md:mb-10 text-4xl md:text-[57px]">
               Our <span className="text-[#5A00CC]">Gallery</span>
             </h2>
             <p className=" mx-4 mb-8 md:mb-14 text-center text-sm md:text-lg md:mt-8">
@@ -85,7 +85,7 @@ const GalleryPage = () => {
             <div
               onClick={() => handleImgClick(item)}
               key={item.id}
-              className={`col-span-6 cursor-pointer md:col-span-4 ${
+              className={`col-span-12 sm:col-span-6 cursor-pointer md:col-span-4 ${
                 item.id == 2 && "row-span-2"
               } ${item.id == 8 && "row-span-2"} ${
                 item.id == 9 && "md:col-span-8"

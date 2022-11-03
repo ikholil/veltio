@@ -16,7 +16,7 @@ const Pricing = () => {
           <div className="flex flex-col px-2 xl:px-0 items-stretch justify-center flex-wrap lg:flex-row gap-5">
             {pricing.map((item, i) => (
               <div
-                className="bg-white w-[295px] md:w-[417px] shadow-lg rounded-md "
+                className="bg-white w-[295px] md:w-[417px] shadow-[0px_4px_18px_rgba(148,148,148,0.25)] rounded-[10px] "
                 key={item.title}
               >
                 <div className="flex flex-col justify-between">
