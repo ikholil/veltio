@@ -15,10 +15,10 @@ const Team = () => {
       <div className="bg-[url('/image/team/team-bg.png')] bg-no-repeat bg-cover relative flex items-center justify-center">
      
           <div className="py-[80px] md:pt-[123px] md:pb-[120px] max-w-[1296px] mx-auto z-10">
-            <h2 className="text-center mx-5 text-3xl lg:text-[57px] text-white font-bold mb-[41px]">
+            <h2 className="text-center mx-5 text-3xl lg:text-[57px] text-white font-bold mb-5 md:mb-[41px]">
               Meet Our Event Speakers
             </h2>
-            <p className="text-white text-base md:text-lg px-2 text-center mb-8 md:mb-[37px]">
+            <p className="text-white text-base md:text-lg px-2 text-center mb-5 md:mb-[37px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum{" "}
               <br /> urna sed erat tortor aliquam ipsum
             </p>

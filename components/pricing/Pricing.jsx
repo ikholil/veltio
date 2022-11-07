@@ -7,11 +7,11 @@ const Pricing = () => {
       <div className="bg-[url('/image/pricing/bg.png')] bg-no-repeat bg-cover">
      
 
-      <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto py-20 md:pt-[127px] pb-[120px]">
+      <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto py-[60px] md:pt-[127px] md:pb-[120px]">
         <h2 className="text-white  font-bold  text-3xl md:text-[57px]">
           Get Your Ticket
         </h2>
-        <p className="md:max-w-lg  mx-3  mb-14 text-white text-center mt-5 text-sm md:text-lg md:mt-[28px]">
+        <p className="md:max-w-lg  mx-3 mb-7 md:mb-14 text-white text-center mt-3 text-sm md:text-lg md:mt-[28px]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum urna sed erat tortor aliquam ipsum
         </p>
         <div className="flex flex-wrap max-w-full px-3 xl:px-0 justify-center   gap-5">
@@ -24,7 +24,7 @@ const Pricing = () => {
                     <h3 className={`text-lg md:text-3xl text-center font-extrabold mb-4 md:mb-8 ${i == 1?'text-white':'text-[#222]'}`}>{item.title}</h3>
                     </div>
                     {i !== 1 && <div className="w-28 h-1 mx-auto bg-[#5A00CC]"></div>}
-                   <div className="px-10 pb-[60px]">
+                   <div className="px-10 pb-8 md:pb-[60px]">
                    <ul className="flex flex-1 flex-col gap-2  items-center mt-[34px] mb-9">
                      {
                       item.features.map(feature => (

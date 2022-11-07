@@ -6,10 +6,10 @@ import AboutShape from "../../public/image/about/about-page-shape.png";
 aboutBusiness;
 const GlobalBusiness = () => {
   return (
-    <div className="max-w-[1296px] mx-auto my-16 md:mt-[132px] md:pb-[138px]">
+    <div className="max-w-[1296px] mx-auto my-16 lg:mt-[132px] lg:pb-[140px]">
       <div className="grid grid-cols-12 mx-3 2xl:mx-0 2xl:gap-5 items-center">
         <div className="col-span-12 mx-3 xl:mx-0 flex justify-center lg:col-span-4 relative">
-          <div className="absolute hidden lg:block -top-[150px] -left-[30px]  ">
+          <div className="absolute hidden md:left-3 lg:block -top-[150px] -left-[30px]  ">
             <Image
               src={AboutImg}
               height={440}
@@ -17,7 +17,7 @@ const GlobalBusiness = () => {
               alt="about page image"
             />
           </div>
-          <div className="absolute hidden lg:block md:-top-[217px] -left-[100px]">
+          <div className="absolute hidden md:-left-[12px] lg:block md:-top-[219px] -left-[100px]">
             <Image
               src={AboutShape}
               height={300}

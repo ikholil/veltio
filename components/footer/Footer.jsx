@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="relative  bg-[#0D0635]">
       <div className=" max-w-[1296px]  mx-auto  min-h-[350px]">
         <div className="absolute top-3 animate-pulse">
-          <Image src={dots1} alt="footer dots" />
+          <Image src={dots1} height={300} alt="footer dots" />
         </div>
         <div className="grid place-content-center  xl:px-0  w-full">
           <div className="w-auto sm:px-20 md:px-32 lg:px-48 lg:bg-[url('/image/footer/footer-shape.png')] bg-no-repeat bg-left  relative flex flex-col justify-center items-center bg-white px-4 rounded-md mt-20 mb-5 md:my-[120px] py-6 md:py-16 mx-2 md:mx-auto">
@@ -57,7 +57,7 @@ const Footer = () => {
           </div>
         </div>
         <hr />
-        <div className="flex  flex-col md:flex-row  justify-between py-7  items-center">
+        <div className="flex mx-3  flex-col md:flex-row  justify-between py-7  items-center">
           <p className="text-base mb-4 md:mb-0 text-[#b3b3b3]">
             © 2022 Veltio. All rights reserved
           </p>

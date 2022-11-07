@@ -80,7 +80,7 @@ const GalleryPage = () => {
           </div>
 
 
-        <div className="grid mx-2 xl:mx-0 grid-cols-12 mb-[50px]  gap-4">
+        <div className="grid mx-2 xl:mx-0 grid-cols-12 mb-7 md:mb-[50px]  gap-4">
           {galleryPageImg.map((item) => (
             <div
               onClick={() => handleImgClick(item)}
@@ -104,7 +104,7 @@ const GalleryPage = () => {
         
         </div>
 
-        <div className="flex justify-center mb-10 md:mb-[120px] gap-2">
+        <div className="flex justify-center mb-[60px] md:mb-[120px] gap-2">
           <a
             href="#"
             className="bg-[#F112A2] w-7 flex justify-center text-white border border-[#F112A2]"

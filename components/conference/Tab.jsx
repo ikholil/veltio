@@ -57,7 +57,7 @@ const Tab = () => {
                       />
                     </div>
                     <div>
-                      <p className="text-lg md:mb-1 font-semibold">
+                      <p className="text-lg mb-[3px] font-semibold">
                         {item.time}
                       </p>
                       <h3 className="text-xl md:text-2xl font-semibold mb-[13px] primary-color">

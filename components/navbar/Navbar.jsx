@@ -51,7 +51,7 @@ const Header = () => {
               ["/schedule", "Schedule"],
             ].map(([url, title]) => (
               <li
-                className="md:py-9"
+                className="md:py-4 xl:py-9"
                 key={title}
                 onClick={() => setOpen(false)}
               >
@@ -66,13 +66,13 @@ const Header = () => {
               </li>
             ))}
 
-            <li className="md:py-9 navitem">
+            <li className="md:py-4 xl:py-9 navitem">
               <a className=" flex  items-center gap-2 relative cursor-pointer text-white text-lg text-x py-2 pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 ">
                 Pages <BsChevronDown />{" "}
               </a>
               <span className="relative">
                 
-                <span className="absolute dropdown bg-[#3F0985] w-40 md:top-[36px]  hidden text-white text-lg">
+                <span className="absolute dropdown bg-[#3F0985] w-40 md:top-4 xl:top-[36px]  hidden text-white text-lg">
                   {[
                     ["/speakers", "Speakers"],
                     ["/price", "Price"],

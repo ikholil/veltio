@@ -11,7 +11,7 @@ const Conference = () => {
             <h2 className="text-4xl md:text-[57px] font-bold text-center mt-14 lg:mt-[123px]">
               Conference <span className="text-[#5A00CC]">Schedule</span>
             </h2>
-            <p className="md:max-w-md text-center text-lg mx-3 md:text-lg  mt-[22px]">
+            <p className="md:max-w-md text-center text-base mx-3 md:text-lg mt-4 md:mt-[22px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
               urna sed erat tortor aliquam ipsum
             </p>

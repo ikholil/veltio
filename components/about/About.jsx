@@ -36,7 +36,7 @@ const About = () => {
         </div>
       </div>
       <div className="max-w-[1296px] mx-auto ">
-        <div className="flex flex-col-reverse mx-2 xl:mx-0 md:flex-row md:pb-[120px] md:pt-[132px] gap-7 md:gap-10 xl:gap-32 items-center  ">
+        <div className="flex flex-col-reverse mx-2 2xl:mx-0 md:flex-row pb-[60px] md:pb-[120px] md:pt-[132px] gap-7 md:gap-10 xl:gap-32 items-center  ">
           <div className="hidden lg:flex relative items-center gap-5 flex-col justify-center md:flex-row">
             <div className="absolute md:-top-3 hidden md:block -right-3">
               <Image

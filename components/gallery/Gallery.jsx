@@ -59,7 +59,7 @@ const Gallery = () => {
           </div>
         </div>
       )}
-      <div className="absolute animate-pulse -z-10 top-5 -right-1">
+      <div className="absolute hidden md:block animate-pulse -z-10 top-5 -right-1">
         <Image
           src="/image/gallery/bg-dots-home.png"
           height={260}
@@ -68,8 +68,8 @@ const Gallery = () => {
         />
       </div>
 
-        <div className="max-w-[1296px] mx-auto mb-16 md:mb-[120px] ">
-          <h2 className="text-4xl md:text-[57px] font-extrabold text-center mb-[37px] mt-16 md:mt-[122px]">
+        <div className="max-w-[1296px] mx-auto mb-14 md:mb-[120px] ">
+          <h2 className="text-4xl md:text-[57px] font-extrabold text-center mb-4 md:mb-[37px] mt-14 md:mt-[122px]">
             Our <span className="text-[#5A00CC]">Gallery</span>
           </h2>
           <p className="text-center text-lg text-[#444] mb-[35px] md:mb-[55px]">

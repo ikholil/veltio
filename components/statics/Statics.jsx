@@ -9,15 +9,15 @@ const Statics = () => {
           <h1 className="text-3xl mt-16 md:mt-[110px] leading-tight mb-4 md:mb-[7px] font-bold md:text-[57px] text-center">
             Our Present <span className="primary-color">Statics</span>
           </h1>
-          <p className="text-base md:text-lg text-[#444444] text-center mx-2 lg:mx-0  mb-[53px] max-w-lg">
+          <p className="text-base md:text-lg text-[#444444] text-center mx-2 lg:mx-0 mb-[30px] md:mb-[53px] max-w-lg">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
             urna sed erat tortor aliquam ipsum
           </p>
-          <div className="flex justify-center 2xl:justify-between  flex-wrap  mx-2 2xl:mx-0 mb-16 md:mb-[120px] gap-6 ">
+          <div className="flex justify-center 2xl:justify-between  flex-wrap  mx-2 2xl:mx-0 mb-16 md:mb-[120px] gap-2 md:gap-6 ">
             {statics.map((stat) => (
               <div
                 key={stat.title}
-                className="flex  gap-7 w-[230px] lg:w-[416px] items-center bg-white rounded-lg px-4 md:px-[30px] py-3 md:py-6"
+                className="flex  gap-3 md:gap-7 w-[200px] md:w-[416px] items-center bg-white rounded-lg px-4 md:px-[30px] py-3 md:py-6"
               >
                 <div className="w-14 h-14 md:w-24 md:h-24 ">
                   <Image src={stat.icon} width={100} height={100} alt="icon" />

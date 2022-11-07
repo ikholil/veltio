@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import { speakers } from "../../data/speakers";
 import Social from "../others/Social";
-
+import dots1 from "../../public/image/team/allteam-bg-dot.png";
 const Team = () => {
   const router = useRouter();
   const handleClick = (id) => {
@@ -11,18 +11,19 @@ const Team = () => {
   };
   return (
     <div className="relative">
-      <div className="bg-[url('/image/team/allteam-bg-dot.png')] bg-no-repeat bg-cover h-full w-screen absolute"></div>
-
-      <div className="my-20 md:my-[120px]   max-w-[1296px] mx-auto z-10">
-        <h2 className="text-center text-3xl md:text-[57px]  font-bold mb-[30px]">
+      <div className="absolute top-0 animate-pulse">
+        <Image src={dots1} height={1200} alt="conference dots" />
+      </div>
+      <div className="my-[70px] md:my-[120px]   max-w-[1296px] mx-auto z-10">
+        <h2 className="text-center text-3xl md:text-[57px]  font-bold  md:mb-[30px]">
           Meet Our Event <span className="text-[#F112A2]"> Speakers</span>
         </h2>
-        <p className=" text-lg px-2 text-center mt-10 mb-8 md:mb-[56px]">
+        <p className="text-base md:text-lg px-2 text-center mt-3 mb-8 md:mb-[56px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum{" "}
           <br /> urna sed erat tortor aliquam ipsum
         </p>
 
-        <div className="flex flex-col mx-3 lg:mx-0 flex-wrap md:flex-row gap-6 md:gap-y-14 justify-center items-center text-center">
+        <div className="flex flex-col mx-3 lg:mx-0 flex-wrap md:flex-row gap-6 lg:gap-y-[60px] justify-center items-center text-center">
           {speakers.map((person) => (
             <div
               key={person.name}

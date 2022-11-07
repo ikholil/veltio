@@ -8,10 +8,10 @@ const Review = () => {
       <div className="relative">
         <div className="bg-[url('/image/review/review-bg.png')] bg-no-repeat bg-cover opacity-10 h-full w-full absolute top-0 flex items-center justify-center"></div>
         <div className="pb-[60px] md:pb-[120px] pt-16 md:pt-[127px]  max-w-[1296px] mx-auto z-10 relative">
-          <h2 className="text-center text-3xl  md:text-[57px] font-bold mb-[25px]">
+          <h2 className="text-center text-3xl  md:text-[57px] font-bold mb-2 md:mb-[25px]">
             Previous <span className="text-[#F112A2]">Event</span>
           </h2>
-          <p className="text-[#444] text-base md:text-lg px-2 text-center mb-8 md:mb-14">
+          <p className="text-[#444] text-base md:text-lg px-2 text-center mb-9 md:mb-14">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
           <div className="flex flex-col mx-2 md:mx-0 flex-wrap md:flex-row gap-6 justify-center items-center">

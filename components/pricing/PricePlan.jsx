@@ -1,22 +1,26 @@
+import Image from "next/image";
 import React from "react";
 import { pricing } from "../../data/price";
-
+import dots from '../../public/image/pricing/pricing-bg-dots.png'
 const Pricing = () => {
   return (
-    <div>
-      <div className="bg-[url('/image/pricing/pricing-bg-dots.png')] min-h-[850px] bg-no-repeat top-4 left-2 relative flex items-center justify-center">
+   
+      <div className="relative flex items-center justify-center">
+        <div className="absolute top-3 animate-pulse">
+          <Image src={dots} alt="footer dots" />
+        </div>
         <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto mb-20 md:mb-[135px]">
           <h2 className="  font-bold mt-8 md:mt-[112px] text-2xl md:text-[57px]">
             Get Your <span className="text-[#5A00CC]">Ticket</span>
           </h2>
-          <p className="md:max-w-lg mx-4 mb-4 md:mb-14  text-center mt-5 text-sm md:text-lg md:mt-[29px]">
+          <p className="md:max-w-lg mx-4 mb-9 md:mb-14  text-center mt-2 text-sm md:text-lg md:mt-[29px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
             urna sed erat tortor aliquam ipsum
           </p>
           <div className="flex flex-col px-2 xl:px-0 items-stretch justify-center flex-wrap lg:flex-row gap-5">
             {pricing.map((item, i) => (
               <div
-                className="bg-white w-[295px] md:w-[417px] shadow-[0px_4px_18px_rgba(148,148,148,0.25)] rounded-[10px] "
+                className="bg-white w-[285px] md:w-[417px] shadow-[0px_4px_18px_rgba(148,148,148,0.25)] rounded-[10px] "
                 key={item.title}
               >
                 <div className="flex flex-col justify-between">
@@ -69,7 +73,7 @@ const Pricing = () => {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 
