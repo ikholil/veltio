@@ -68,10 +68,10 @@ const GalleryPage = () => {
           alt="bg dots"
         />
       </div>
-      <div className="max-w-[1296px] mx-auto">
+      <div className="max-w-[1296px] mx-auto mt-16 md:mt-[120px]">
 
           <div className="text-center">
-            <h2 className="text-center font-extrabold mt-16 md:mt-[120px] mb-3 md:mb-10 text-4xl md:text-[57px]">
+            <h2 className="text-center font-extrabold  mb-6 md:mb-10 text-4xl md:text-[57px]">
               Our <span className="text-[#5A00CC]">Gallery</span>
             </h2>
             <p className=" mx-4 mb-8 md:mb-14 text-center text-sm md:text-lg md:mt-8">
@@ -104,7 +104,7 @@ const GalleryPage = () => {
         
         </div>
 
-        <div className="flex justify-center mb-[60px] md:mb-[120px] gap-2">
+        <div className="flex justify-center mb-[70px] md:mb-[120px] gap-2">
           <a
             href="#"
             className="bg-[#F112A2] w-7 flex justify-center text-white border border-[#F112A2]"

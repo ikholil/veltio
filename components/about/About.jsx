@@ -36,7 +36,7 @@ const About = () => {
         </div>
       </div>
       <div className="max-w-[1296px] mx-auto ">
-        <div className="flex flex-col-reverse mx-2 2xl:mx-0 md:flex-row pb-[60px] md:pb-[120px] md:pt-[132px] gap-7 md:gap-10 xl:gap-32 items-center  ">
+        <div className="flex flex-col-reverse mx-2 2xl:mx-0 md:flex-row pb-[70px] md:pb-[120px] md:pt-[132px] gap-7 md:gap-10 xl:gap-32 items-center  ">
           <div className="hidden lg:flex relative items-center gap-5 flex-col justify-center md:flex-row">
             <div className="absolute md:-top-3 hidden md:block -right-3">
               <Image
@@ -70,7 +70,7 @@ const About = () => {
           </div>
 
           <div className="flex max-w-[526px] flex-col flex-wrap lg:col-span-6 px-3 md:px-0 mr-0 md:mr-20">
-            <h2 className="text-3xl my-16 md:mt-0 lg:text-[57px] leading-tight mb-2 font-bold">
+            <h2 className="text-3xl mt-16 md:mt-0 lg:text-[57px] leading-tight mb-4 md:mb-2 font-bold">
               Wolcome To Global <span className="text-[#5A00CC]">Business</span>{" "}
               Conference
             </h2>

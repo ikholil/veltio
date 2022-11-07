@@ -14,7 +14,7 @@ const Team = () => {
     <div>
       <div className="bg-[url('/image/team/team-bg.png')] bg-no-repeat bg-cover relative flex items-center justify-center">
      
-          <div className="py-[80px] md:pt-[123px] md:pb-[120px] max-w-[1296px] mx-auto z-10">
+          <div className="pt-[66px] pb-[70px] md:pt-[123px] md:pb-[120px] max-w-[1296px] mx-auto z-10">
             <h2 className="text-center mx-5 text-3xl lg:text-[57px] text-white font-bold mb-5 md:mb-[41px]">
               Meet Our Event Speakers
             </h2>
@@ -22,7 +22,7 @@ const Team = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum{" "}
               <br /> urna sed erat tortor aliquam ipsum
             </p>
-            <div className="flex flex-col flex-wrap md:flex-row gap-6 justify-center items-center pt-5 text-center">
+            <div className="flex flex-col flex-wrap md:flex-row gap-4 justify-center items-center pt-5 text-center">
               {speakers.slice(0, 4).map((person) => (
                 <div
                   key={person.name}

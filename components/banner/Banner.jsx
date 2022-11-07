@@ -19,7 +19,7 @@ const Banner = () => {
         </div>
 
         <div className="max-w-[1296px] mx-auto z-20 flex flex-col md:flex-row xl:min-h-[870px] h-full items-center ">
-          <div className="z-10 pt-28  xl:pt-0 px-4 xl:px-0">
+          <div className="z-10 pt-28  xl:pt-0 px-4 2xl:px-0">
             <p className="text-white text-lg md:text-2xl font-semibold mb-2 xl:mb-4 ">
               Professional
             </p>

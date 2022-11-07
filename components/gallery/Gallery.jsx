@@ -68,8 +68,8 @@ const Gallery = () => {
         />
       </div>
 
-        <div className="max-w-[1296px] mx-auto mb-14 md:mb-[120px] ">
-          <h2 className="text-4xl md:text-[57px] font-extrabold text-center mb-4 md:mb-[37px] mt-14 md:mt-[122px]">
+        <div className="max-w-[1296px] mx-auto mb-[70px] md:mb-[120px] mt-[66px] md:mt-[122px]">
+          <h2 className="text-4xl md:text-[57px] font-extrabold text-center mb-6 md:mb-[37px] ">
             Our <span className="text-[#5A00CC]">Gallery</span>
           </h2>
           <p className="text-center text-lg text-[#444] mb-[35px] md:mb-[55px]">

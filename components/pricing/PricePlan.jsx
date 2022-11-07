@@ -9,15 +9,15 @@ const Pricing = () => {
         <div className="absolute top-3 animate-pulse">
           <Image src={dots} alt="footer dots" />
         </div>
-        <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto mb-20 md:mb-[135px]">
-          <h2 className="  font-bold mt-8 md:mt-[112px] text-2xl md:text-[57px]">
+        <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto mt-[67px] md:mt-[112px] mb-[70px] md:mb-[135px]">
+          <h2 className="  font-bold  text-2xl md:text-[57px]">
             Get Your <span className="text-[#5A00CC]">Ticket</span>
           </h2>
-          <p className="md:max-w-lg mx-4 mb-9 md:mb-14  text-center mt-2 text-sm md:text-lg md:mt-[29px]">
+          <p className="md:max-w-lg mx-4 mb-9 md:mb-14  text-center mt-4 text-sm md:text-lg md:mt-[29px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
             urna sed erat tortor aliquam ipsum
           </p>
-          <div className="flex flex-col px-2 xl:px-0 items-stretch justify-center flex-wrap lg:flex-row gap-5">
+          <div className="flex flex-col px-2 xl:px-0 items-stretch justify-center flex-wrap lg:flex-row gap-4">
             {pricing.map((item, i) => (
               <div
                 className="bg-white w-[285px] md:w-[417px] shadow-[0px_4px_18px_rgba(148,148,148,0.25)] rounded-[10px] "
@@ -29,13 +29,13 @@ const Pricing = () => {
                       i == 1 && "bg-[#F112A2] text-white"
                     } pt-16 rounded-t-md`}
                   >
-                    <h1
-                      className={`text-center font-extrabold text-2xl md:text-[57px] mb-3 md:mb-7 ${
+                    <h2
+                      className={`text-center font-bold text-2xl md:text-[57px] mb-3 md:mb-7 ${
                         i == 1 ? "bg-[#F112A2] text-white" : "primary-color"
                       }`}
                     >
                       ${item.price}
-                    </h1>
+                    </h2>
                     <h3
                       className={`text-lg md:text-3xl text-center font-semibold mb-4 md:mb-10 ${
                         i == 1 ? "text-white" : "text-[#222]"

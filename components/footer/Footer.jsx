@@ -14,7 +14,7 @@ const Footer = () => {
           <Image src={dots1} height={300} alt="footer dots" />
         </div>
         <div className="grid place-content-center  xl:px-0  w-full">
-          <div className="w-auto sm:px-20 md:px-32 lg:px-48 lg:bg-[url('/image/footer/footer-shape.png')] bg-no-repeat bg-left  relative flex flex-col justify-center items-center bg-white px-4 rounded-md mt-20 mb-5 md:my-[120px] py-6 md:py-16 mx-2 md:mx-auto">
+          <div className="w-auto sm:px-20 md:px-32 lg:px-48 lg:bg-[url('/image/footer/footer-shape.png')] bg-no-repeat bg-left  relative flex flex-col justify-center items-center bg-white px-4 rounded-md mt-[70px] mb-5 md:my-[120px] py-6 md:py-16 mx-2 md:mx-auto">
             <div className="absolute hidden md:block rounded-md top-3  right-2 animate-pulse">
               <Image src={dots2} className="rounded-md" alt="footer shape" />
             </div>

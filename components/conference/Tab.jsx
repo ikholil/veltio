@@ -9,7 +9,7 @@ const Tab = () => {
     setCurrentTab(id);
   };
   return (
-    <div className="max-w-[856px] mt-5 md:mt-14 mb-16 md:mb-[120px]">
+    <div className="max-w-[856px] mt-9 md:mt-14 mb-[70px] md:mb-[120px]">
       <div className="flex justify-center flex-wrap gap-4 mx-2 md:mx-0">
         {conference.map((speaker, i) => (
           <div
@@ -37,11 +37,11 @@ const Tab = () => {
           </div>
         ))}
       </div>
-      <div className="content mt-5 md:mt-[60px]">
+      <div className="content mt-6 md:mt-[60px]">
         {conference.map((conference, i) => (
           <div key={i}>
             {currentTab === `${conference.id}` && (
-              <div className="flex  mx-4 lg:mx-0 flex-col gap-7">
+              <div className="flex  mx-4 lg:mx-0 flex-col gap-4">
                 {conference.speakers.map((item) => (
                   <div
                     key={item.title}

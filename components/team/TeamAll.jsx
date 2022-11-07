@@ -14,8 +14,8 @@ const Team = () => {
       <div className="absolute top-0 animate-pulse">
         <Image src={dots1} height={1200} alt="conference dots" />
       </div>
-      <div className="my-[70px] md:my-[120px]   max-w-[1296px] mx-auto z-10">
-        <h2 className="text-center text-3xl md:text-[57px]  font-bold  md:mb-[30px]">
+      <div className="mt-[64px] mb-[70px] md:my-[120px]   max-w-[1296px] mx-auto z-10">
+        <h2 className="text-center text-3xl md:text-[57px]  font-bold mb-6 md:mb-[30px]">
           Meet Our Event <span className="text-[#F112A2]"> Speakers</span>
         </h2>
         <p className="text-base md:text-lg px-2 text-center mt-3 mb-8 md:mb-[56px]">
@@ -23,7 +23,7 @@ const Team = () => {
           <br /> urna sed erat tortor aliquam ipsum
         </p>
 
-        <div className="flex flex-col mx-3 lg:mx-0 flex-wrap md:flex-row gap-6 lg:gap-y-[60px] justify-center items-center text-center">
+        <div className="flex flex-col mx-3 lg:mx-0 flex-wrap md:flex-row gap-4 md:gap-6 lg:gap-y-[60px] justify-center items-center text-center">
           {speakers.map((person) => (
             <div
               key={person.name}

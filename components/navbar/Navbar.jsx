@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <nav
-      className={`w-full fixed py-3 md:py-0 z-50 px-1 xl:px-0 navbar   ${
+      className={`w-full fixed py-3 md:py-0 z-50 px-2 2xl:px-0 navbar   ${
         navColor ? "bg-[#3D0687]" : "bg-transparent"
       }`}
     >
@@ -40,7 +40,7 @@ const Header = () => {
         <div
           className={` w-screen md:block md:w-auto ${
             open
-              ? "block absolute -left-1 h-[92vh] z-50 bg-[#5401BF] top-[52px]"
+              ? "block absolute -left-2 h-[92vh] z-50 bg-[#5401BF] top-[52px]"
               : "hidden"
           }`}
         >

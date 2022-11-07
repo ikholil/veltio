@@ -6,7 +6,7 @@ const Event = () => {
   return (
     <div>
       <div className="min-h-[500px] bg-[url('/image/pricing/partnar-bg.png')] bg-cover bg-no-repeat h-full relative">
-        <div className="max-w-[1296px] mx-auto py-12 lg:pb-[115px] lg:pt-[122px]">
+        <div className="max-w-[1296px] mx-auto pt-[67px] pb-[70px] lg:pb-[115px] lg:pt-[122px]">
           <div className="flex flex-col justify-center items-center ">
             <h2 className="text-3xl md:text-[57px] text-white font-bold text-center ">
               Our Event Partner{" "}

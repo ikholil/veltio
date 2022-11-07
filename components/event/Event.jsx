@@ -6,8 +6,8 @@ import EventShape2 from "../../public/image/event/event-shape2.png";
 
 const Event = () => {
   return (
-    <div className="relative">
-      <div className="mb-10 md:mb-[107px]  mt-16 md:mt-[120px]">
+    <div className="relative bg-slate-100">
+      <div className="pb-16 md:pb-[107px]  pt-16 md:pt-[120px]">
         <div className="max-w-[1296px] mx-auto ">
           <div className="flex flex-col justify-center items-center ">
             <h2 className="text-4xl md:text-[57px] font-bold text-center">
@@ -20,7 +20,7 @@ const Event = () => {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-center px-5 md:px-0 md:flex-row gap-7 md:gap-4 flex-wrap mt-8 mb:mt-3 md:mt-[44px] ">
+          <div className="flex flex-col justify-center items-center px-5 md:px-0 md:flex-row gap-5 md:gap-4 flex-wrap mt-8 mb:mt-3 md:mt-[44px] ">
             {eventHome.map((img, i) => (
               <div
                 key={i}
@@ -31,10 +31,10 @@ const Event = () => {
             ))}
           </div>
         </div>
-        <div className="absolute hidden xl:block -z-10 top-10 left-24">
+        <div className="absolute hidden xl:block z-10 top-20 left-24">
           <Image src={EventShape} height={260} width={138} alt="shape" />
         </div>
-        <div className="hidden xl:block absolute  -z-10 -top-24 right-0">
+        <div className="hidden xl:block absolute  z-10 top-16 right-0">
           <Image src={EventShape2} height={400} width={150} alt="shape" />
         </div>
       </div>
