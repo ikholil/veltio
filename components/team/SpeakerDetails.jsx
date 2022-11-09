@@ -25,7 +25,7 @@ const SpeakerDetails = () => {
               alt="speaker image"
             />
           </div>
-          <h2 className="font-bold text-2xl text-[#222]">{speaker?.name}</h2>
+          <h5 className="font-bold text-2xl text-[#222]">{speaker?.name}</h5>
           <p className="text-lg text-[#222] mb-[27px]">Speakers</p>
           <div className="bg-[#F112A2] h-[.5px] w-36 mb-[25px]"></div>
           <p className="text-lg text-[#444] px-2 md:px-5 mb-8 text-center">
@@ -46,11 +46,11 @@ const SpeakerDetails = () => {
           </h2>
           <p className="text-lg text-[#444] mb-[51px]">{speaker?.experience}</p>
 
-          <h4 className="text-lg font-bold mb-2">Business</h4>
+          <h6 className="text-lg font-bold mb-2">Business</h6>
           <div className="xl:w-1/3 rounded-xl bg-gray-200 h-1 mb-5">
             <div className="bg-[#F112A2] rounded-xl h-1 w-10/12"></div>
           </div>
-          <h4 className="text-lg font-bold mb-2">Entrepreneur</h4>
+          <h6 className="text-lg font-bold mb-2">Entrepreneur</h6>
           <div className="xl:w-1/3 rounded-xl bg-gray-200 h-1 md:mb-5">
             <div className="bg-[#F112A2] rounded-xl h-1 w-11/12"></div>
           </div>

@@ -33,7 +33,7 @@ const Header = () => {
       <div className="max-w-[1296px] relative z-40 mx-auto flex flex-wrap justify-between items-center">
         <Link href="/">
           <a className="flex items-center pl-2 md:pl-0">
-            <Image src="/icon.png" height={36} width={102} alt="logo" />
+            <Image src="/icon.png" height={36} width={112} alt="logo" />
           </a>
         </Link>
 

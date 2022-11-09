@@ -17,7 +17,7 @@ const GlobalBusiness = () => {
               alt="about page image"
             />
           </div>
-          <div className="absolute hidden md:-left-[12px] lg:block md:-top-[219px] -left-[100px]">
+          <div className="absolute hidden lg:block md:-top-[219px] -left-[60px]">
             <Image
               src={AboutShape}
               height={300}
@@ -32,7 +32,7 @@ const GlobalBusiness = () => {
             Best Global <span className="text-[#F112A2]">Business</span>{" "}
             Conference
           </h2>
-          <div className="grid grid-cols-12 gap-3 xl:gap-12">
+          <div className="grid grid-cols-12 justify-center gap-8 xl:gap-12">
             {aboutBusiness.map((item) => (
               <div
                 key={item.id}
@@ -48,9 +48,9 @@ const GlobalBusiness = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-lg lg:text-2xl font-bold mb-[1px] text-[#222]">
+                  <h5 className="text-lg lg:text-2xl font-bold mb-[1px] text-[#222]">
                     {item.title}
-                  </h3>
+                  </h5>
                   <p className="text-sm lg:text-lg text-[#444]">{item.desc}</p>
                 </div>
               </div>

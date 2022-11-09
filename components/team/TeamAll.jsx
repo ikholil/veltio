@@ -39,9 +39,9 @@ const Team = () => {
               />
 
               <div className="bg-[#5A00CC] rounded-b-lg mx-auto w-[96%] pt-10 pb-3 rounded-t-[50%] transition-all card-inner">
-                <h4 className="text-white text-2xl  font-bold">
+                <h5 className="text-white text-2xl  font-semibold">
                   {person.name}
-                </h4>
+                </h5>
                 <p className="text-white text-lg my-2">Speakers</p>
                 <Social classes="text-white" size={40} />
               </div>

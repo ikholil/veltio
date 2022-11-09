@@ -18,9 +18,9 @@ const Footer = () => {
             <div className="absolute hidden md:block rounded-md top-3  right-2 animate-pulse">
               <Image src={dots2} className="rounded-md" alt="footer shape" />
             </div>
-            <h2 className="text-xl md:text-3xl font-bold mx-2 text-center mb-4 text-[#222]">
+            <h4 className="text-xl md:text-[32px] font-semibold mx-2 text-center mb-4 text-[#222]">
               SUBSCRIBE TO <span className="text-[#5A00CC]">NEWSLETTER</span>
-            </h2>
+            </h4>
             <div className="flex flex-col md:flex-row gap-2  md:px-0 max-w-md mx-auto">
               <input
                 type="email"

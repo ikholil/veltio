@@ -1,19 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import { contactInfo } from "../../data/contactInfo";
-import ContactBg from '../../public/image/contact/contact-info-bg.png'
+import ContactBg from "../../public/image/contact/contact-info-bg.png";
 const ContactInfo = () => {
   return (
     <div className="relative">
-      <div className="absolute animate-pulse top-0 right-10">
-        <Image
-          src={ContactBg}
-          height={480}
-          width={1600}
-          alt="bg dots"
-        />
+      <div className="absolute animate-pulse top-5 right-10">
+        <Image src={ContactBg} alt="bg dots" />
       </div>
-      <div className="max-w-[1296px] mx-auto relative mt-16 md:mt-[125px]">
+      <div className="max-w-[1296px] mx-auto relative pt-16 md:pt-[125px]">
         <div className="text-center">
           <h2 className="text-center mx-3 font-bold  mb-5 md:mb-6 text-3xl md:text-[57px]">
             Contact <span className="text-[#5A00CC]">Information</span>
@@ -29,9 +24,9 @@ const ContactInfo = () => {
               className="md:px-[30px] md:pt-[30px] md:pb-[25px] p-4 mx-3 md:mx-0 rounded-[10px] shadow-[0px_4px_23px_rgba(173,173,173,0.25)]"
               key={info.id}
             >
-              <h3 className="primary-color font-semibold text-xl md:text-[32px] mb-5">
+              <h4 className="primary-color font-semibold text-xl md:text-[32px] mb-5">
                 {info.title}
-              </h3>
+              </h4>
               <ul>
                 <li className="text-[#222] text-base md:text-lg">
                   {" "}
@@ -56,5 +51,4 @@ const ContactInfo = () => {
     </div>
   );
 };
-
 export default ContactInfo;

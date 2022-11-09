@@ -21,7 +21,7 @@ const Pricing = () => {
                   <div className="flex flex-col justify-between">
                     <div className={`${i == 1 && 'bg-[#F112A2] text-white'} pt-10 md:pt-[69px] rounded-t-lg`}>
                     <h2 className={`text-center font-bold text-2xl md:text-[57px] mb-3 md:mb-[34px] ${i == 1 ? 'bg-[#F112A2] text-white':'primary-color'}`}>${item.price}</h2>
-                    <h3 className={`text-lg md:text-3xl text-center font-extrabold mb-4 md:mb-8 ${i == 1?'text-white':'text-[#222]'}`}>{item.title}</h3>
+                    <h4 className={`text-lg md:text-3xl text-center font-semibold mb-4 md:mb-8 ${i == 1?'text-white':'text-[#222]'}`}>{item.title}</h4>
                     </div>
                     {i !== 1 && <div className="w-28 h-1 mx-auto bg-[#5A00CC]"></div>}
                    <div className="px-10 pb-8 md:pb-[60px]">
@@ -34,7 +34,7 @@ const Pricing = () => {
                     </ul>
                     <div className="flex justify-center w-full">
 
-                    <button style={{alignSelf:'end'}} className="text-white font-semibold text-lg py-2 md:py-4 rounded-md px-4 md:px-6 bg-[#F112A2] ">Purchase Ticket</button>
+                    <button style={{alignSelf:'end'}} className="text-white font-semibold hover:shadow-xl duration-300 text-lg py-2 md:py-4 rounded-md px-4 md:px-6 bg-[#F112A2] ">Purchase Ticket</button>
                     </div>
                    </div>
                   </div>

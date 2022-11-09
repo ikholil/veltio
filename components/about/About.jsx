@@ -19,14 +19,14 @@ const About = () => {
               className="flex w-[120px] md:w-auto flex-col items-center"
               key={item.title}
             >
-              <h1
+              <h3
                 className={`text-[#5A00CC] ${
                   i == 0 ? "font-bold " : "font-semibold"
                 } text-3xl md:text-[43px] mb-2 `}
               >
                 <CountUp end={item.number} />
                 <span className="primary-color">+</span>
-              </h1>
+              </h3>
               <p className="text-lg md:text-2xl after:content-[''] after:bg-[#F112A2] after:w-10 after:h-2">
                 {item.title}
               </p>

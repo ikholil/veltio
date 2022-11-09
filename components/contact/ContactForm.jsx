@@ -72,7 +72,7 @@ const ContactForm = () => {
                     placeholder="Full Name"
                     className="p-5 w-full shadow-lg rounded-md mt-4 mb-1 focus:outline-none"
                   />
-                  <span className="text-red-500">
+                  <span className="text-red-500 text-sm">
                     {" "}
                     {errors.name && touched.name && errors.name}
                   </span>
@@ -85,7 +85,7 @@ const ContactForm = () => {
                     placeholder="Email"
                     className="p-5 w-full shadow-lg rounded-md mt-4 mb-1 focus:outline-none"
                   />
-                  <span className="text-red-500">
+                  <span className="text-red-500 text-sm">
                     {" "}
                     {errors.email && touched.email && errors.email}
                   </span>
@@ -98,7 +98,7 @@ const ContactForm = () => {
                     placeholder="Subject"
                     className="p-5 w-full shadow-lg rounded-md mt-4 mb-1 focus:outline-none"
                   />
-                  <span className="text-red-500">
+                  <span className="text-red-500 text-sm">
                     {" "}
                     {errors.subject && touched.subject && errors.subject}
                   </span>
@@ -109,9 +109,9 @@ const ContactForm = () => {
                     onBlur={handleBlur}
                     value={values.message}
                     placeholder="Type a Message"
-                    className=" mt-4 mb-1 p-5 w-full shadow-lg rounded-md focus:outline-none"
+                    className=" mt-4  p-5 w-full shadow-lg rounded-md focus:outline-none"
                   />
-                  <span className="text-red-500">
+                  <span className="text-red-500 text-sm">
                     {" "}
                     {errors.message && touched.message && errors.message}
                   </span>

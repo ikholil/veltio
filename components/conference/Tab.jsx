@@ -15,18 +15,18 @@ const Tab = () => {
           <div
             key={i}
             id={speaker.id}
-            className={`text-center md:w-[196px]  p-2 px-3 md:px-10 md:py-8 cursor-pointer rounded-md shadow-lg ${
+            className={`text-center md:w-[196px]  p-2 px-3 md:px-10 md:py-8 cursor-pointer rounded-[10px] shadow-lg ${
               currentTab == speaker.id ? "bg-[#5A00CC]" : "bg-white"
             }`}
             onClick={() => handleTabClick(speaker.id)}
           >
-            <h4
+            <h5
               className={`text-lg md:text-2xl font-bold mb-2 select-none ${
                 currentTab === speaker.id ? "text-white" : "text-[#5A00CC]"
               }`}
             >
               {speaker.day}
-            </h4>
+            </h5>
             <p
               className={`text-sm md:text-lg select-none ${
                 currentTab === speaker.id ? "text-white" : "text-black"
@@ -57,12 +57,12 @@ const Tab = () => {
                       />
                     </div>
                     <div>
-                      <p className="text-lg mb-[3px] font-semibold">
+                      <h6 className="text-lg mb-[3px] font-semibold">
                         {item.time}
-                      </p>
-                      <h3 className="text-xl md:text-2xl font-semibold mb-[13px] primary-color">
+                      </h6>
+                      <h5 className="text-xl md:text-2xl font-semibold mb-[13px] primary-color">
                         {item.title}
-                      </h3>
+                      </h5>
                       <p className="text-base md:text-lg text-[#444444]">
                         {item.desc}
                       </p>

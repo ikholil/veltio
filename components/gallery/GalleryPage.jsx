@@ -71,7 +71,7 @@ const GalleryPage = () => {
       <div className="max-w-[1296px] mx-auto mt-16 md:mt-[120px]">
 
           <div className="text-center">
-            <h2 className="text-center font-extrabold  mb-6 md:mb-10 text-4xl md:text-[57px]">
+            <h2 className="text-center font-bold  mb-6 md:mb-10 text-4xl md:text-[57px]">
               Our <span className="text-[#5A00CC]">Gallery</span>
             </h2>
             <p className=" mx-4 mb-8 md:mb-14 text-center text-sm md:text-lg md:mt-8">
