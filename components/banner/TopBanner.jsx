@@ -6,7 +6,7 @@ const TopBanner = (props) => {
       <div className="flex  relative z-10 max-w-[1296px] mx-auto items-center h-full pb-[62px] lg:pb-[113px] pt-[130px] lg:pt-[230px]">
    
         <div className="mx-5">
-          <h1 className="text-4xl md:text-5xl lg:text-[76px] mb-2 md:mb-[30px] text-white font-bold">
+          <h1 className="text-4xl md:text-5xl lg:text-[76px] mb-2 md:mb-3 text-white font-bold">
             {props.text}
           </h1>
           <p className="text-white text-base md:text-lg">Home →  {props.indicator}</p>
