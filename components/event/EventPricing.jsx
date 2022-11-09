@@ -18,13 +18,13 @@ const Event = () => {
             </p>
           </div>
 
-          <div className="flex justify-center items-center px-5 md:px-0  gap-8 lg:gap-6 flex-wrap mt-8 md:mt-[52px] ">
+          <div className="flex flex-col justify-center items-center px-5 md:px-0 md:flex-row gap-7 md:gap-12 flex-wrap mt-8 mb:mt-3 md:mt-[44px] ">
             {eventPricing.map((img, i) => (
               <div
                 key={i}
-                className="w-[200px] md:w-[300] flex justify-center lg:w-auto"
+                className="w-[200px] md:w-[270] flex justify-center lg:w-auto"
               >
-                <Image src={img} alt="our partner" height={80} width={306} />
+                <Image src={img} alt="our partner" height={80} width={272} />
               </div>
             ))}
           </div>
