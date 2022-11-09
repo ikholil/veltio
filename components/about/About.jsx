@@ -46,7 +46,7 @@ const About = () => {
                 alt="about image"
               />
             </div>
-            <div className=" mx-2 md:mx-0 rounded-lg">
+            <div className=" mx-2 md:mx-0 hover:rounded-lg">
               <Image
                 src={img3}
                 className="rounded-lg shadow-md hover:scale-125 transition-all duration-700"

@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 import { statics } from "../../data/statics";
 const Statics = () => {
   return (
-    <div className="bg-[url('/image/statics/statics-bg.png')] bg-no-repeat bg-right w-screen statics-bg">
+    <div className="bg-[url('/image/statics/statics-bg.png')]  bg-right  w-screen statics-bg">
 
         <div className="flex flex-col max-w-[1296px]  mx-auto items-center justify-center">
           <h2 className="text-3xl px-4 mt-16 md:mt-[110px] leading-tight mb-4 md:mb-[7px] font-bold md:text-[57px] text-center">

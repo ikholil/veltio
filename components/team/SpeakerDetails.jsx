@@ -25,7 +25,7 @@ const SpeakerDetails = () => {
               alt="speaker image"
             />
           </div>
-          <h5 className="font-bold text-2xl text-[#222]">{speaker?.name}</h5>
+          <h5 className="font-semibold text-2xl text-[#222]">{speaker?.name}</h5>
           <p className="text-lg text-[#222] mb-[27px]">Speakers</p>
           <div className="bg-[#F112A2] h-[.5px] w-36 mb-[25px]"></div>
           <p className="text-lg text-[#444] px-2 md:px-5 mb-8 text-center">
