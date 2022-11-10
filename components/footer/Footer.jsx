@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex mx-3 2xl:mx-0 mb-4 pl-8 pt-5 md:pl-0 md:pt-0 md:items-center flex-col sm:flex-row justify-between ">
+        <div className="flex mx-3 2xl:mx-0 mb-4 pl-4 pt-5 md:pl-0 md:pt-0 md:items-center flex-col sm:flex-row justify-between ">
           <div className="cursor-pointer md:-bottom-2 mb-4 md:mb-0 relative">
             <Link href="/">
               <a>

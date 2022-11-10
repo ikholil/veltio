@@ -1,6 +1,5 @@
 import Head from "next/head";
 import TopBanner from "../../components/banner/TopBanner";
-import Footer from "../../components/footer/Footer";
 import Statics from "../../components/statics/Statics";
 import SpeakerDetails from "../../components/team/SpeakerDetails";
 

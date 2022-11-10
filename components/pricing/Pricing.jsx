@@ -24,7 +24,7 @@ const Pricing = () => {
                     <h4 className={`text-lg md:text-3xl text-center font-semibold mb-4 md:mb-8 ${i == 1?'text-white':'text-[#222]'}`}>{item.title}</h4>
                     </div>
                     {i !== 1 && <div className="w-28 h-1 mx-auto bg-[#5A00CC]"></div>}
-                   <div className="px-10 pb-8 md:pb-[60px]">
+                   <div className="px-10  pb-8 md:pb-[60px]">
                    <ul className="flex flex-1 flex-col gap-2  items-center mt-[34px] mb-9">
                      {
                       item.features.map(feature => (
@@ -34,7 +34,7 @@ const Pricing = () => {
                     </ul>
                     <div className="flex justify-center w-full">
 
-                    <button style={{alignSelf:'end'}} className="text-white font-semibold hover:shadow-xl duration-300 text-lg py-2 md:py-4 rounded-md px-4 md:px-6 bg-[#F112A2] ">Purchase Ticket</button>
+                    <button className="text-white self-end font-semibold  text-lg py-2 md:py-4 rounded-md px-4 md:px-6 bg-[#F112A2] btnhover">Purchase Ticket</button>
                     </div>
                    </div>
                   </div>

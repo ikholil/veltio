@@ -9,7 +9,7 @@ export const pricing = [
         price: 250,
         features: ['Conference Tickets', 'One catered lunch', 'Private Access', 'Experts Contacts']
     },
-    {
+    { 
         title: 'Premium Pass',
         price: 450,
         features: ['Conference Tickets', 'One catered lunch', 'Private Access', 'Experts Contacts']

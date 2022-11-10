@@ -9,7 +9,7 @@ import Button from "../others/Button";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [navColor, setNavColor] = useState(false);
-
+  const [dropdown, setDropdown] = useState(false)
   const changeNavColor = () => {
     if (window.scrollY >= 90) {
       setNavColor(true);
@@ -66,13 +66,13 @@ const Header = () => {
               </li>
             ))}
 
-            <li className="md:py-4 xl:py-9 navitem">
-              <a className=" flex  items-center gap-2 relative cursor-pointer text-white text-lg text-x py-2 pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 ">
+            <li onClick={()=>setDropdown(!dropdown)} className="md:py-4 xl:py-9 navitem">
+              <a className=" flex  items-center gap-2 select-none relative cursor-pointer text-white text-lg text-x py-2 pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 ">
                 Pages <BsChevronDown />{" "}
               </a>
               <span className="relative">
                 
-                <span className="absolute dropdown bg-[#3F0985] w-40 md:top-4 xl:top-[36px]  hidden text-white text-lg">
+                <span className={`absolute dropdown bg-[#3F0985] w-40 md:top-4 xl:top-[36px] text-white text-lg ${dropdown?'flex flex-col':'hidden'}`}>
                   {[
                     ["/speakers", "Speakers"],
                     ["/price", "Price"],

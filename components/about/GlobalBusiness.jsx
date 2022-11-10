@@ -32,11 +32,11 @@ const GlobalBusiness = () => {
             Best Global <span className="text-[#F112A2]">Business</span>{" "}
             Conference
           </h2>
-          <div className="grid grid-cols-12 justify-center gap-8 xl:gap-12">
+          <div className="grid grid-cols-2 justify-center gap-8 xl:gap-12">
             {aboutBusiness.map((item) => (
               <div
                 key={item.id}
-                className="col-span-12 mx-4 min-h-0 h-full flex items-start gap-5 md:col-span-6 "
+                className="col-span-2 mx-2 h-full flex items-start gap-5 md:col-span-1 "
               >
                 <div className="shadow-xl shadow-[#f112a316] w-24 px-2 py-1 rounded-lg ">
                   <Image

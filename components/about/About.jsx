@@ -49,7 +49,7 @@ const About = () => {
             <div className=" mx-2 md:mx-0 hover:rounded-lg">
               <Image
                 src={img3}
-                className="rounded-lg shadow-md hover:scale-125 transition-all duration-700"
+                className="imgzoom"
                 height={356}
                 width={306}
                 alt="about image"
@@ -58,12 +58,12 @@ const About = () => {
             <div className="flex rounded-lg flex-col gap-5 mb-20 md:mb-0 mx-2 md:mx-0">
               <Image
                 src={img1}
-                className="rounded-lg shadow-md hover:scale-125 transition-all duration-700"
+                className="imgzoom"
                 alt="img"
               />
               <Image
                 src={img2}
-                className="rounded-lg shadow-md hover:scale-125 transition-all duration-700"
+                className="imgzoom"
                 alt="about image"
               />
             </div>

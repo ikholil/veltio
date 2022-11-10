@@ -17,7 +17,7 @@ const Statics = () => {
             {statics.map((stat) => (
               <div
                 key={stat.title}
-                className="flex  gap-3 md:gap-7 w-[200px] md:w-[416px] items-center bg-white rounded-[10px] shadow-lg cursor-pointer px-4 md:px-[30px] py-3 md:py-6"
+                className="flex  gap-3 md:gap-7 w-[200px] md:w-[416px] items-center bg-white rounded-[10px] shadow-lg  px-4 md:px-[30px] py-3 md:py-6"
               >
                 <div className="w-14 h-14 md:w-24 md:h-24 ">
                   <Image src={stat.icon} width={100} height={100} alt="icon" />

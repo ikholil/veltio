@@ -1,52 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden !important;
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden !important;
 }
 
 @layer components {
-    .primary-color {
-      @apply text-[#F112A2]
-    }
-    .zoom{
-      @apply hover:scale-150 transition-all duration-1000
-    }
-    .pinkhover{
-      @apply hover:bg-[#F112A2] hover:text-white transition-colors duration-300
-    }
+  .primary-color {
+    @apply text-[#F112A2];
   }
-.card:hover .card-inner{
+  .zoom {
+    @apply hover:scale-150 transition-all duration-1000;
+  }
+  .imgzoom{
+  @apply rounded-lg shadow-md hover:scale-125 transition-all duration-700
+  }
+  .pinkhover {
+    @apply hover:bg-[#F112A2] hover:text-white transition-colors duration-300;
+  }
+  .btnhover {
+   @apply hover:shadow-[inset_13rem_0_0_0] hover:shadow-[#5A00CC] duration-[400ms,700ms] transition-[color,box-shadow]
+  }
+
+}
+.card:hover .card-inner {
   opacity: 100;
   transform: translateY(-7px);
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-.card-inner{
+.card-inner {
   position: absolute;
   bottom: 0;
   opacity: 0;
-  transition: all .5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-.bg-conference{
+.bg-conference {
   background-size: 100%;
- background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
-.navbar{
-  border-bottom: 1px solid #8243D1;
+.navbar {
+  border-bottom: 1px solid #8243d1;
 }
-.navitem:hover .dropdown{
-  display: flex;
-}
-.dropdown{
+@media (min-width: 768px) {
+  .navitem:hover .dropdown {
+    display: flex;
+  }
+  .dropdown {
   display: flex;
   display: none;
   flex-direction: column;
 }
+}
+
 
