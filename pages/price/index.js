@@ -2,7 +2,6 @@ import Head from "next/head";
 import React from "react";
 import TopBanner from "../../components/banner/TopBanner";
 import EventPricing from "../../components/event/EventPricing";
-import Footer from "../../components/footer/Footer";
 import PricePlan from "../../components/pricing/PricePlan";
 
 const Price = () => {

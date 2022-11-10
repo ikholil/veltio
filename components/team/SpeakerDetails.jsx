@@ -1,28 +1,29 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { speakers } from "../../data/speakers";
 import Social from "../others/Social";
 import Placeholder from "../../public/image/team/placeholder.jpg";
-import Link from "next/link";
 const SpeakerDetails = () => {
   const [speaker, setSpeaker] = useState({});
   const { query } = useRouter();
-  const router = useRouter();
   useEffect(() => {
-    const speaker = speakers.find((item) => item.id == query.id);
+    const speaker = speakers.find((item) => item.id == parseInt(query.id));
     setSpeaker(speaker);
   }, [query.id]);
   const ids = speakers.map((speaker) => speaker.id);
   if (ids.indexOf(parseInt(query.id)) == -1) {
     return (
       <div className="py-40 w-full flex flex-col gap-8 items-center justify-center">
-        
-          <h3 className="text-6xl font-semibold">Oops! Page Not Found!</h3>
-          <Link href="/">
-            <a className="text-2xl bg-[#F112A2] btnhover px-6 py-3 rounded-lg text-white">Go to Home</a>
-          </Link>
-      
+        <h3 className=" mx-3 lg:mx-0 text-6xl font-semibold">
+          Oops! Page Not Found!
+        </h3>
+        <Link href="/">
+          <a className="text-2xl bg-[#F112A2] btnhover px-6 py-3 rounded-lg text-white">
+            Go to Home
+          </a>
+        </Link>
       </div>
     );
   }
