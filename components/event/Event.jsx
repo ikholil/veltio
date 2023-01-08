@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import { eventHome } from "../../data/eventhome";
 import EventShape from "../../public/image/event/event-shape.png";
 import EventShape2 from "../../public/image/event/event-shape2.png";

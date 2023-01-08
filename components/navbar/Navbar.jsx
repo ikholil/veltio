@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
-
 import { HiMenu } from "react-icons/hi";
-import Button from "../others/Button";
+
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [navColor, setNavColor] = useState(false);
-  const [dropdown, setDropdown] = useState(false)
+  const [dropdown, setDropdown] = useState(false);
   const changeNavColor = () => {
     if (window.scrollY >= 90) {
       setNavColor(true);
@@ -66,13 +65,19 @@ const Header = () => {
               </li>
             ))}
 
-            <li onClick={()=>setDropdown(!dropdown)} className="md:py-4 xl:py-9 navitem">
+            <li
+              onClick={() => setDropdown(!dropdown)}
+              className="md:py-4 xl:py-9 navitem"
+            >
               <a className=" flex  items-center gap-2 select-none relative cursor-pointer text-white text-lg text-x py-2 pr-4 md:pl-3  rounded md:hover:bg-transparent md:border-0 hover:text-primary md:p-0 ">
                 Pages <BsChevronDown />{" "}
               </a>
               <span className="relative">
-                
-                <span className={`absolute dropdown bg-[#3F0985] w-40 md:top-4 xl:top-[36px] text-white text-lg ${dropdown?'flex flex-col':'hidden'}`}>
+                <span
+                  className={`absolute dropdown bg-[#3F0985] w-40 md:top-4 xl:top-[36px] text-white text-lg ${
+                    dropdown ? "flex flex-col" : "hidden"
+                  }`}
+                >
                   {[
                     ["/speakers", "Speakers"],
                     ["/price", "Price"],
@@ -91,13 +96,21 @@ const Header = () => {
                 </span>
               </span>
             </li>
-            <li className=" md:hidden mt-2">
-              <Button name="Book Ticket" classes="primary-color bg-white" />
+            <li className=" md:hidden mt-5">
+              <Link href="/contact">
+                <a className="bg-white px-6 py-2 md:px-10 md:py-4 rounded-md font-semibold text-[#F112A2] hover:bg-[#F112A2] hover:text-white duration-300">
+                  Book Ticket
+                </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div className="hidden md:block">
-          <Button name="Book Ticket" classes="primary-color hover:shadow-md bg-white" />
+          <Link href="/contact">
+            <a className="bg-white px-10 py-4 rounded-md font-semibold text-[#F112A2] hover:bg-[#F112A2] hover:text-white duration-300">
+              Book Ticket
+            </a>
+          </Link>
         </div>
         <button
           onClick={() => setOpen(!open)}

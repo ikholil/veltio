@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 const TopBanner = (props) => {
   return (
     <div className="bg-[url('/image/banner/banner-bg2.png')] bg-no-repeat bg-cover relative">

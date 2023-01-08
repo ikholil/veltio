@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import { pricing } from "../../data/price";
 import dots from "../../public/image/pricing/pricing-bg-dots.png";
 const Pricing = () => {
@@ -8,11 +7,11 @@ const Pricing = () => {
       <div className="absolute top-3 animate-pulse">
         <Image src={dots} alt="footer dots" />
       </div>
-      <div className=" max-w-[1296px]  z-10 flex flex-col items-center mx-auto mt-[67px] md:mt-[112px] mb-[70px] md:mb-[135px]">
-        <h2 className="  font-bold  text-2xl md:text-[57px]">
+      <div className="max-w-[1296px] z-10 flex flex-col items-center mx-auto mt-[67px] md:mt-[112px] mb-[70px] md:mb-[135px]">
+        <h2 className="font-bold text-2xl md:text-[57px]">
           Get Your <span className="text-[#5A00CC]">Ticket</span>
         </h2>
-        <p className="md:max-w-lg mx-4 mb-9 md:mb-14  text-center mt-4 text-sm md:text-lg md:mt-[29px]">
+        <p className="md:max-w-lg mx-4 mb-9 md:mb-14 text-center mt-4 text-sm md:text-lg md:mt-[29px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
           urna sed erat tortor aliquam ipsum
         </p>
@@ -30,7 +29,7 @@ const Pricing = () => {
                 >
                   <h2
                     className={`text-center font-bold text-2xl md:text-[57px] mb-3 md:mb-7 ${
-                      i == 1 ? "bg-[#F112A2] text-white" : "primary-color"
+                      i == 1 ? "bg-[#F112A2] text-white":"primary-color"
                     }`}
                   >
                     ${item.price}
@@ -58,7 +57,7 @@ const Pricing = () => {
                     ))}
                   </ul>
                   <div className="flex justify-center w-full">
-                    <button className="text-white self-end  text-lg py-3 rounded-md px-4 bg-[#F112A2] btnhover">
+                    <button className="text-white self-end text-lg py-3 rounded-md px-4 bg-[#F112A2] hover:shadow-lg hover:shadow-[#f112a360] duration-200">
                       Purchase Ticket
                     </button>
                   </div>

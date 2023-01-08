@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { GoPrimitiveDot } from "react-icons/go";
 import Social from "../others/Social";
 import dots1 from "../../public/image/footer/dots1.png";
 import dots2 from "../../public/image/footer/dots2.png";
 import { footermenus } from "../../data/footermenu";
+import { Form } from "formik";
 const Footer = () => {
   return (
     <div className="relative  bg-[#0D0635]">
@@ -21,17 +21,19 @@ const Footer = () => {
             <h4 className="text-xl md:text-[32px] font-semibold mx-2 text-center mb-4 text-[#222]">
               SUBSCRIBE TO <span className="text-[#5A00CC]">NEWSLETTER</span>
             </h4>
-            <div className="flex flex-col md:flex-row gap-2  md:px-0 max-w-md mx-auto">
-              <input
-                type="email"
-                className="border-b py-1 w-full md:w-[250px] border-black focus:outline-none focus:border-b foucs:border-black"
-                placeholder="Email"
-                size={80}
-                required
-              />
-              <button className="py-2  px-3 hover:bg-white hover:text-[#F112A2] border-2 transition-all duration-300 border-[#F112A2] hover:border-2 hover:border-[#F112A2] md:px-8 bg-[#F112A2] text-white">
-                Subscribe
-              </button>
+            <div>
+              <form className="flex flex-col md:flex-row gap-2  md:px-0 max-w-md mx-auto">
+                <input
+                  type="email"
+                  className="border-b py-1 w-full md:w-[250px] border-black focus:outline-none focus:border-b foucs:border-black"
+                  placeholder="Email"
+                  size={80}
+                  required
+                />
+                <button type="submit" className="py-2  px-3  border-2 transition-all duration-300 border-[#F112A2] md:px-8 bg-[#F112A2] text-white hover:shadow-lg hover:shadow-[#f112a360]">
+                  Subscribe
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -49,7 +51,11 @@ const Footer = () => {
                 <Link key={title} href={url}>
                   <li className="flex gap-4 justify-center items-center">
                     <a className="cursor-pointer font-semibold">{title}</a>
-                    <GoPrimitiveDot className={`hidden md:block ${index == footermenus.length-1 && 'md:hidden'}`} />
+                    <GoPrimitiveDot
+                      className={`hidden md:block ${
+                        index == footermenus.length - 1 && "md:hidden"
+                      }`}
+                    />
                   </li>
                 </Link>
               ))}

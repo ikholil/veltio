@@ -1,9 +1,7 @@
 import Image from "next/image";
-import React from "react";
 import { aboutBusiness } from "../../data/aboutBusiness";
 import AboutImg from "../../public/image/about/about-page-img.png";
 import AboutShape from "../../public/image/about/about-page-shape.png";
-aboutBusiness;
 const GlobalBusiness = () => {
   return (
     <div className="max-w-[1296px] mx-auto my-16 lg:mt-[132px] lg:pb-[140px]">

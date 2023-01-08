@@ -1,14 +1,15 @@
 import Image from "next/image";
 import React from "react";
-import { bannerStates } from "../../data/bannerstate";
 import CountUp from "react-countup";
+import { bannerStates } from "../../data/bannerstate";
 import img3 from "../../public/image/about/image3.png";
 import img1 from "../../public/image/about/image1.png";
 import img2 from "../../public/image/about/image2.png";
 import rectangle from '../../public/image/about/rectangle.png'
 import aboutShape from '../../public/image/about/about-shape.png'
 import aboutCircle from '../../public/image/about/about-circle.png'
-bannerStates;
+import { motion } from "framer-motion";
+
 const About = () => {
   return (
     <div className="relative">
@@ -20,9 +21,8 @@ const About = () => {
               key={item.title}
             >
               <h3
-                className={`text-[#5A00CC] ${
-                  i == 0 ? "font-bold " : "font-semibold"
-                } text-3xl md:text-[43px] mb-2 `}
+                className={`text-[#5A00CC] ${i == 0 ? "font-bold " : "font-semibold"
+                  } text-3xl md:text-[43px] mb-2 `}
               >
                 <CountUp end={item.number} />
                 <span className="primary-color">+</span>
@@ -70,7 +70,7 @@ const About = () => {
           </div>
 
           <div className="flex max-w-[526px] flex-col flex-wrap lg:col-span-6 px-3 md:px-0 mr-0 md:mr-20">
-            <h2 className="text-3xl mt-16 md:mt-0 lg:text-[57px] leading-tight mb-4 md:mb-2 font-bold">
+            <h2  className="text-3xl mt-16 md:mt-0 lg:text-[57px] leading-tight mb-4 md:mb-2 font-bold">
               Wolcome To Global <span className="text-[#5A00CC]">Business</span>{" "}
               Conference
             </h2>

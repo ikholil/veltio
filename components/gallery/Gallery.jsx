@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { galleryImages } from "../../data/galleryImage";
 import { MdClose } from "react-icons/md";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";

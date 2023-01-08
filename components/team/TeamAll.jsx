@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import React from "react";
 import { speakers } from "../../data/speakers";
 import Social from "../others/Social";
 import dots1 from "../../public/image/team/allteam-bg-dot.png";

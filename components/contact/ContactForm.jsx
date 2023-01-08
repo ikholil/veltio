@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import { Formik } from "formik";
 import formDots from "../../public/image/contact/form-bg-dots.png";
 const ContactForm = () => {
@@ -63,62 +62,71 @@ const ContactForm = () => {
                 /* and other goodies */
               }) => (
                 <form onSubmit={handleSubmit}>
-                  <input
-                    type="text"
-                    name="name"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.name}
-                    placeholder="Full Name"
-                    className="p-5 w-full shadow-lg rounded-md mt-4 mb-1 focus:outline-none"
-                  />
-                  <span className="text-red-500 text-sm">
-                    {" "}
-                    {errors.name && touched.name && errors.name}
-                  </span>
-                  <input
-                    type="text"
-                    name="email"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.email}
-                    placeholder="Email"
-                    className="p-5 w-full shadow-lg rounded-md mt-4 mb-1 focus:outline-none"
-                  />
-                  <span className="text-red-500 text-sm">
-                    {" "}
-                    {errors.email && touched.email && errors.email}
-                  </span>
-                  <input
-                    type="text"
-                    name="subject"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.subject}
-                    placeholder="Subject"
-                    className="p-5 w-full shadow-lg rounded-md mt-4 mb-1 focus:outline-none"
-                  />
-                  <span className="text-red-500 text-sm">
-                    {" "}
-                    {errors.subject && touched.subject && errors.subject}
-                  </span>
-                  <textarea
-                    rows="8"
-                    onChange={handleChange}
-                    name="message"
-                    onBlur={handleBlur}
-                    value={values.message}
-                    placeholder="Type a Message"
-                    className=" mt-4  p-5 w-full shadow-lg rounded-md focus:outline-none"
-                  />
-                  <span className="text-red-500 text-sm">
-                    {" "}
-                    {errors.message && touched.message && errors.message}
-                  </span>
+                  <div className="flex flex-col">
+                    <input
+                      type="text"
+                      name="name"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.name}
+                      placeholder="Full Name"
+                      className="p-5 w-full shadow-lg rounded-md mt-1 mb-1 focus:outline-none"
+                    />
+                    <span className="text-red-500 text-sm h-5">
+                      {" "}
+                      {errors.name && touched.name && errors.name}
+                    </span>
+                  </div>
+                  <div className="flex flex-col">
+                    <input
+                      type="text"
+                      name="email"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.email}
+                      placeholder="Email"
+                      className="p-5 w-full shadow-lg rounded-md mt-1 mb-1 focus:outline-none"
+                    />
+                    <span className="text-red-500 text-sm h-5">
+                      {" "}
+                      {errors.email && touched.email && errors.email}
+                    </span>
+                  </div>
+                  <div className="flex flex-col">
+
+                    <input
+                      type="text"
+                      name="subject"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      value={values.subject}
+                      placeholder="Subject"
+                      className="p-5 w-full shadow-lg rounded-md mt-1 mb-1 focus:outline-none"
+                    />
+                    <span className="text-red-500 text-sm h-5">
+                      {" "}
+                      {errors.subject && touched.subject && errors.subject}
+                    </span>
+                  </div>
+                  <div className="flex flex-col">
+                    <textarea
+                      rows="8"
+                      onChange={handleChange}
+                      name="message"
+                      onBlur={handleBlur}
+                      value={values.message}
+                      placeholder="Type a Message"
+                      className=" mt-1 p-5 w-full shadow-lg rounded-md focus:outline-none"
+                    />
+                    <span className="text-red-500 text-sm h-5">
+                      {" "}
+                      {errors.message && touched.message && errors.message}
+                    </span>
+                  </div>
 
                   <div className="flex justify-center mt-6 md:mt-[50px] pb-[70px] md:pb-[120px]">
                     <button
-                      className="bg-[#F112A2] font-semibold px-12 py-4 rounded-lg text-white"
+                      className="bg-[#F112A2] font-semibold px-12 py-4 rounded-lg text-white hover:shadow-lg hover:shadow-[#f112a360] duration-200"
                       type="submit"
                     >
                       Contact Us

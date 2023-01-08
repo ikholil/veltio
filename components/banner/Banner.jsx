@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import bannerImg from "../../public/image/banner/banner.png";
 import bannerShape2 from "../../public/image/banner/banner-shape2.png";
 import circleBanner from "../../public/image/banner/circle-banner.png";
@@ -20,8 +19,8 @@ const Banner = () => {
               Professional
             </p>
             <motion.h1
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={{ opacity: 0, scale:.8 }}
+              animate={{ opacity: 1, scale:1 }}
               transition={{ duration: 1 }}
               className="font-bold leading-tight text-white text-4xl lg:text-6xl xl:text-[76px]"
             >
@@ -38,7 +37,7 @@ const Banner = () => {
                 California
               </li>
             </ul>
-            <button className="px-8 md:px-14 mt-[35px] py-2 md:py-4 lg:mb-0 hover:bg-[#F112A2] hover:text-white  transition-all duration-300 rounded-md bg-white primary-color font-bold">
+            <button className="px-8 md:px-14 mt-[35px] py-2 md:py-4 lg:mb-0 hover:bg-[#F112A2] hover:text-white  transition-all duration-300 rounded-md bg-white primary-color font-semibold">
               Get Ticket
             </button>
           </div>

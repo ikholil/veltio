@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import { contactInfo } from "../../data/contactInfo";
 import ContactBg from "../../public/image/contact/contact-info-bg.png";
 const ContactInfo = () => {
