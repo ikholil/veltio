@@ -8,7 +8,7 @@ export const conference = [
   {
     id: "1",
     day: "Day 01",
-    date: "25 July 2022",
+    date: "25 July 2023",
     speakers: [
       
         
@@ -35,7 +35,7 @@ export const conference = [
   {
     id:"2",
     day: "Day 02",
-    date: "26 July 2022",
+    date: "26 July 2023",
     speakers: [
         {
             time: "10 AM-12 PM",
@@ -61,7 +61,7 @@ export const conference = [
   {
     id:"3",
     day: "Day 03",
-    date: "27 July 2022",
+    date: "27 July 2023",
     speakers: [
         
         {

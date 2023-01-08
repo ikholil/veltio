@@ -65,7 +65,7 @@ const Footer = () => {
         <hr />
         <div className="flex mx-3  flex-col md:flex-row  justify-between py-7  items-center">
           <p className="text-base mb-4 md:mb-0 text-[#b3b3b3]">
-            © 2022 Veltio. All rights reserved
+            © 2023 Veltio. All rights reserved
           </p>
           <Social classes="text-white" size={45} />
         </div>

@@ -29,7 +29,7 @@ const Banner = () => {
             <ul className="mt-3 md:mt-6 text-base md:text-2xl">
               <li className=" flex mb-1 md:mb-5 items-center gap-3 text-white">
                 {" "}
-                <GoPrimitiveDot className="text-[#F112A2]" /> 25-28 July 2022
+                <GoPrimitiveDot className="text-[#F112A2]" /> 25-28 July 2023
               </li>
               <li className="flex items-center gap-3 text-white">
                 {" "}
