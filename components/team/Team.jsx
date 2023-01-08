@@ -36,7 +36,7 @@ const Team = () => {
                   alt="team member"
                 />
 
-                <div className="bg-[--var(--color-primary)] w-[95%] pt-10 pb-4 rounded-b-md rounded-t-[50%] transition-all card-inner">
+                <div className="bg-[#5A00CC] w-[95%] pt-10 pb-4 rounded-b-md rounded-t-[50%] transition-all card-inner">
                   <h5 className="text-white text-xl md:text-2xl  font-semibold">
                     {person.name}
                   </h5>

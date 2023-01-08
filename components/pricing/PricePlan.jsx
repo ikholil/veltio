@@ -9,7 +9,7 @@ const Pricing = () => {
       </div>
       <div className="max-w-[1296px] z-10 flex flex-col items-center mx-auto mt-[67px] md:mt-[112px] mb-[70px] md:mb-[135px]">
         <h2 className="font-bold text-2xl md:text-[57px]">
-          Get Your <span className="text-[--var(--color-primary)]">Ticket</span>
+          Get Your <span className="text-[#5A00CC]">Ticket</span>
         </h2>
         <p className="md:max-w-lg mx-4 mb-9 md:mb-14 text-center mt-4 text-sm md:text-lg md:mt-[29px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
@@ -43,7 +43,7 @@ const Pricing = () => {
                   </h3>
                 </div>
                 {i !== 1 && (
-                  <div className="w-28 h-1 mx-auto bg-[--var(--color-primary)]"></div>
+                  <div className="w-28 h-1 mx-auto bg-[#5A00CC]"></div>
                 )}
                 <div className="p-6 md:p-10">
                   <ul className="flex flex-col gap-4 items-center my-4 md:my-8">
