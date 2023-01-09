@@ -1,8 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next/Link";
 import { useEffect, useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 import { HiMenu } from "react-icons/hi";
+import { Link as ScrollLink } from "react-scroll";
 
 
 const Header = () => {
@@ -96,8 +97,8 @@ const Header = () => {
                 </span>
               </span>
             </li>
-            <li className=" md:hidden mt-5">
-              <Link href="/contact">
+            <li className="md:hidden mt-5" onClick={() => setOpen(false)}>
+              <Link href="#pricing">
                 <a className="bg-white px-6 py-2 md:px-10 md:py-4 rounded-md font-semibold text-[#F112A2] hover:bg-[#F112A2] hover:text-white duration-300">
                   Book Ticket
                 </a>
@@ -106,11 +107,11 @@ const Header = () => {
           </ul>
         </div>
         <div className="hidden md:block">
-          <Link href="/contact">
-            <a className="bg-white px-10 py-4 rounded-md font-semibold text-[#F112A2] hover:bg-[#F112A2] hover:text-white duration-300">
+          <ScrollLink offset={-50} smooth={true} to="pricing">
+            <a className="bg-white px-10 py-4 rounded-md cursor-pointer font-semibold text-[#F112A2] hover:bg-[#F112A2] hover:text-white duration-300">
               Book Ticket
             </a>
-          </Link>
+          </ScrollLink>
         </div>
         <button
           onClick={() => setOpen(!open)}
