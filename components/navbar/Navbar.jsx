@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
 import { HiMenu } from "react-icons/hi";
